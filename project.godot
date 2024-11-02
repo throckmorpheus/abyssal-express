@@ -13,6 +13,7 @@ config_version=5
 config/name="Abyssal Express"
 run/main_scene="res://scenes/main.tscn"
 config/features=PackedStringArray("4.3", "C#", "GL Compatibility")
+boot_splash/show_image=false
 config/icon="res://assets/icon.svg"
 
 [dotnet]
@@ -23,3 +24,7 @@ project/assembly_name="Abyssal Express"
 
 version_control/plugin_name="GitPlugin"
 version_control/autoload_on_startup=true
+
+[rendering]
+
+textures/vram_compression/import_etc2_astc=true
