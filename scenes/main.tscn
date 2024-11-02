@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://cc7wg51ux5jq"]
+[gd_scene load_steps=2 format=3 uid="uid://cc7wg51ux5jq"]
+
+[ext_resource type="PackedScene" uid="uid://coy7tm2hvn6dq" path="res://scenes/characters/humanoid_base.tscn" id="1_84ly7"]
 
 [node name="Main" type="Node2D"]
+
+[node name="HumanoidBase" parent="." instance=ExtResource("1_84ly7")]
+position = Vector2(517, 288)
+scale = Vector2(0.610051, 0.610051)
