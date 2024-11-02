@@ -7,6 +7,7 @@
 
 [node name="MainMenu" instance=ExtResource("1_3q2ev")]
 script = ExtResource("2_lfebh")
+game_scene_path = "res://scenes/main.tscn"
 options_packed_scene = ExtResource("3_8st7n")
 credits_packed_scene = ExtResource("4_h132w")
 

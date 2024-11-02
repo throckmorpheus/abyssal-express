@@ -6,7 +6,13 @@
 ### Godot Menus Template
 Author: [Marek Belski](https://github.com/Maaack/Godot-Menus-Template/graphs/contributors)  
 Source: [github: Godot-Menus-Template](https://github.com/Maaack/Godot-Menus-Template)  
-License: [MIT License](LICENSE.txt) 
+License: [MIT License](LICENSE.txt)
+
+### Another Typewriter (font)
+Author: Johan Holmdahl
+Source: [dafont: Another Typewrite](https://www.dafont.com/another-typewriter.font)  
+License: Freeware by Johan Holmdahl 1999.
+
 
 
 ## Tools
