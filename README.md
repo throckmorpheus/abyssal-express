@@ -2,7 +2,9 @@
 ## Setup Instructions
 
 Download and install the [.NET SDK](https://dotnet.microsoft.com/en-us/download).
+
 Run *setup_godot_win_x86_64.bat*. The correct Godot version will be downloaded to the *.godot_install* directory. (It needs to be here for the VSCode stuff to find it.)
+
 Run *.godot_install/Godot.exe* to open the editor. You will start in the project manager - select 'Import Existing Project', then select this folder.
 
 ### VSCode
