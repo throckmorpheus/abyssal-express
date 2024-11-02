@@ -23,8 +23,3 @@ project/assembly_name="Abyssal Express"
 
 version_control/plugin_name="GitPlugin"
 version_control/autoload_on_startup=true
-
-[rendering]
-
-renderer/rendering_method="gl_compatibility"
-renderer/rendering_method.mobile="gl_compatibility"

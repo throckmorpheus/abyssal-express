@@ -8,4 +8,4 @@ Run *.godot_install/Godot.exe* to open the editor. You will start in the project
 ### VSCode
 If you open this folder with [VSCode](https://code.visualstudio.com/) it will recommend the extensions you need for Godot and C#.
 
-In Godot, you'll want to set the C# external editor, so you can automatically switch to VSCode when you open a script from the editor. In the top bar of the Godot editor, go to 'Editor' -> 'Editor Settings', then scroll down until you find the 'Dotnet' -> 'Editor' section. Set 'External Editor' to 'Visual Studio Code' in the dropdown.
+In Godot, you'll want to set the C# external editor so you can automatically switch to VSCode when you open a script from the editor. In the top bar of the Godot editor, go to 'Editor' -> 'Editor Settings', then scroll down until you find the 'Dotnet' -> 'Editor' section. Set 'External Editor' to 'Visual Studio Code' in the dropdown.
