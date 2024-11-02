@@ -6,7 +6,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "dotnet: build",
-            "program": "${workspaceFolder}/.godot_install/Godot_v4.3-stable_mono_win64.exe",
+            "program": "${workspaceFolder}/.godot_install/Godot.exe",
             "cwd": "${workspaceFolder}/.godot_install",
             "console": "internalConsole",
             "stopAtEntry": false,
