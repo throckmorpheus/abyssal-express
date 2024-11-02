@@ -1,3 +1,16 @@
-[gd_scene format=3 uid="uid://cc7wg51ux5jq"]
+[gd_scene load_steps=2 format=3 uid="uid://cc7wg51ux5jq"]
+
+[ext_resource type="PackedScene" uid="uid://dcbuucqifkh4t" path="res://scenes/gui/dialogue.tscn" id="1_qpnv4"]
 
 [node name="Main" type="Node2D"]
+
+[node name="YarnSpinnerCanvasLayer" parent="." instance=ExtResource("1_qpnv4")]
+offset = Vector2(105.875, 125.02)
+scale = Vector2(0.765, 0.765)
+transform = Transform2D(0.765, 0, 0, 0.765, 105.875, 125.02)
+
+[node name="DialogueRunner" parent="YarnSpinnerCanvasLayer" index="0"]
+startNode = "test"
+startAutomatically = true
+
+[editable path="YarnSpinnerCanvasLayer"]

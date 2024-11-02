@@ -6,4 +6,6 @@
     <EnableDynamicLoading>true</EnableDynamicLoading>
     <RootNamespace>AbyssalExpress</RootNamespace>
   </PropertyGroup>
+  
+  <Import Project="addons\YarnSpinner-Godot\YarnSpinner-Godot.props" />
 </Project>
