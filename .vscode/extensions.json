@@ -8,6 +8,7 @@
 		"altamkp.godot-docs-vscode-csharp",
 		"altamkp.godot-snippets-vscode-csharp",
 		"geequlim.godot-tools",
-		"github.vscode-github-actions"
+		"github.vscode-github-actions",
+		"secretlab.yarn-spinner"
 	]
 }
