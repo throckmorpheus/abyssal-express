@@ -1,0 +1,12 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cc06u3s0c7cd1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w5k1n"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.589476, 0.613275, 0.529067, 1)
+expand_margin_left = 2.0
+
+[resource]
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_w5k1n")

@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=9 format=3 uid="uid://ccc5spa7n20ed"]
+[gd_resource type="Theme" load_steps=10 format=3 uid="uid://ccc5spa7n20ed"]
 
 [ext_resource type="FontFile" uid="uid://dd5akmaq5m6c0" path="res://assets/font/atwriter.ttf" id="1_3rd6t"]
 [ext_resource type="Texture2D" uid="uid://b3we1berrop0j" path="res://assets/UI/Dialogue_Next_Button_Hovered.png" id="1_j0lrq"]
@@ -41,9 +41,18 @@ texture = ExtResource("3_v2imk")
 texture_margin_left = 8.0
 texture_margin_right = 48.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w8777"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+bg_color = Color(0.38413, 0.647453, 0.703799, 1)
+expand_margin_right = 4.0
+expand_margin_bottom = 4.0
+
 [resource]
+default_font = ExtResource("1_3rd6t")
 Button/fonts/font = ExtResource("1_3rd6t")
 Button/styles/focus = SubResource("StyleBoxTexture_tj6xd")
 Button/styles/hover = SubResource("StyleBoxTexture_dwa6a")
 Button/styles/normal = SubResource("StyleBoxTexture_5nxb5")
 Button/styles/pressed = SubResource("StyleBoxTexture_i0q4k")
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_w8777")

@@ -1,13 +1,70 @@
-[gd_scene load_steps=9 format=3 uid="uid://dcbuucqifkh4t"]
+[gd_scene load_steps=20 format=3 uid="uid://dcbuucqifkh4t"]
 
 [ext_resource type="Script" path="res://addons/YarnSpinner-Godot/Runtime/DialogueRunner.cs" id="1_edw52"]
 [ext_resource type="Resource" uid="uid://dvot4cuiho8td" path="res://Abyssal Express.yarnproject" id="2_hp0q0"]
+[ext_resource type="FontFile" uid="uid://dd5akmaq5m6c0" path="res://assets/font/atwriter.ttf" id="3_0kahx"]
+[ext_resource type="Theme" uid="uid://cc06u3s0c7cd1" path="res://assets/theme/dialogue_nameplate.tres" id="3_aipk0"]
 [ext_resource type="Script" path="res://addons/YarnSpinner-Godot/Runtime/Views/LineView.cs" id="3_ktu6m"]
 [ext_resource type="Theme" uid="uid://ccc5spa7n20ed" path="res://assets/theme/dialogue.tres" id="3_u3ee2"]
+[ext_resource type="Texture2D" uid="uid://b3we1berrop0j" path="res://assets/UI/Dialogue_Next_Button_Hovered.png" id="4_pkrin"]
 [ext_resource type="Script" path="res://addons/YarnSpinner-Godot/Runtime/Views/OptionsListView.cs" id="4_vo3rl"]
 [ext_resource type="PackedScene" uid="uid://b56ngcrq31nc5" path="res://addons/YarnSpinner-Godot/Scenes/OptionView.tscn" id="5_axl8p"]
+[ext_resource type="Texture2D" uid="uid://e1tpctq0g8fu" path="res://assets/UI/Dialogue_Next_Button_Unclicked.png" id="5_svh5w"]
+[ext_resource type="Texture2D" uid="uid://dufr67wu72xhd" path="res://assets/UI/Dialogue_Next_Button_Clicked.png" id="6_8lgnf"]
 [ext_resource type="Script" path="res://addons/YarnSpinner-Godot/Runtime/InMemoryVariableStorage.cs" id="6_n02yu"]
 [ext_resource type="Script" path="res://addons/YarnSpinner-Godot/Runtime/LineProviders/TextLineProvider.cs" id="7_maeer"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tj6xd"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+texture = ExtResource("4_pkrin")
+texture_margin_left = 8.0
+texture_margin_right = 48.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dwa6a"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+texture = ExtResource("4_pkrin")
+texture_margin_left = 8.0
+texture_margin_right = 48.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5nxb5"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+texture = ExtResource("5_svh5w")
+texture_margin_left = 8.0
+texture_margin_right = 48.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i0q4k"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+texture = ExtResource("6_8lgnf")
+texture_margin_left = 8.0
+texture_margin_right = 48.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ndi85"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+bg_color = Color(0.38413, 0.647453, 0.703799, 1)
+expand_margin_right = 4.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="Theme" id="Theme_jjugd"]
+default_font = ExtResource("3_0kahx")
+Button/fonts/font = ExtResource("3_0kahx")
+Button/styles/focus = SubResource("StyleBoxTexture_tj6xd")
+Button/styles/hover = SubResource("StyleBoxTexture_dwa6a")
+Button/styles/normal = SubResource("StyleBoxTexture_5nxb5")
+Button/styles/pressed = SubResource("StyleBoxTexture_i0q4k")
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_ndi85")
 
 [node name="YarnSpinnerCanvasLayer" type="CanvasLayer"]
 
@@ -29,6 +86,7 @@ lineProvider = NodePath("../TextLineProvider")
 [node name="VariableDebugText" type="RichTextLabel" parent="."]
 
 [node name="LineView" type="Control" parent="." node_paths=PackedStringArray("characterNameText", "continueButton")]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -36,12 +94,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-theme = ExtResource("3_u3ee2")
+theme = SubResource("Theme_jjugd")
 script = ExtResource("3_ktu6m")
 viewControlPath = NodePath("ViewControl")
 useFadeEffect = false
-lineTextPath = NodePath("ViewControl/LineText")
-characterNameText = NodePath("ViewControl/CharacterNameText")
+lineTextPath = NodePath("ViewControl/Line Panel/LineText")
+characterNameText = NodePath("ViewControl/Name Panel/CharacterNameText")
 typewriterEffectSpeed = 80.0
 continueButton = NodePath("ViewControl/ContinueButton")
 
@@ -53,54 +111,23 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="LineText" type="RichTextLabel" parent="LineView/ViewControl"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -610.0
-offset_top = -352.0
-offset_right = 640.0
-offset_bottom = 193.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_font_sizes/bold_italics_font_size = 36
-theme_override_font_sizes/italics_font_size = 36
-theme_override_font_sizes/mono_font_size = 36
-theme_override_font_sizes/normal_font_size = 36
-theme_override_font_sizes/bold_font_size = 36
-bbcode_enabled = true
-text = "The dialogue text should appear here!"
-
-[node name="ColorRect" type="ColorRect" parent="LineView/ViewControl/LineText"]
-modulate = Color(0.203922, 0.192157, 0.192157, 0.458824)
+[node name="Name Panel" type="PanelContainer" parent="LineView/ViewControl"]
 show_behind_parent = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -1.0
-offset_right = -12.0
-offset_bottom = -158.0
+offset_left = -35.0
+offset_top = -95.0
+offset_right = -611.0
+offset_bottom = -684.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("3_aipk0")
 
-[node name="CharacterNameText" type="RichTextLabel" parent="LineView/ViewControl"]
+[node name="CharacterNameText" type="RichTextLabel" parent="LineView/ViewControl/Name Panel"]
 self_modulate = Color(0.321569, 0.87451, 0.254902, 1)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -607.0
-offset_top = -415.0
-offset_right = 279.0
-offset_bottom = -362.0
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 2
 theme_override_font_sizes/bold_italics_font_size = 36
 theme_override_font_sizes/italics_font_size = 36
 theme_override_font_sizes/mono_font_size = 36
@@ -109,12 +136,29 @@ theme_override_font_sizes/bold_font_size = 36
 bbcode_enabled = true
 text = "Character Name"
 
-[node name="ColorRect" type="ColorRect" parent="LineView/ViewControl/CharacterNameText"]
-modulate = Color(0.203922, 0.192157, 0.192157, 0.458824)
+[node name="Line Panel" type="PanelContainer" parent="LineView/ViewControl"]
 show_behind_parent = true
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -35.0
+offset_top = -28.0
+offset_right = -46.0
+offset_bottom = -186.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_u3ee2")
+
+[node name="LineText" type="RichTextLabel" parent="LineView/ViewControl/Line Panel"]
+layout_mode = 2
+theme_override_font_sizes/bold_italics_font_size = 36
+theme_override_font_sizes/italics_font_size = 36
+theme_override_font_sizes/mono_font_size = 36
+theme_override_font_sizes/normal_font_size = 36
+theme_override_font_sizes/bold_font_size = 36
+bbcode_enabled = true
+text = "The dialogue text should appear here!"
 
 [node name="ContinueButton" type="Button" parent="LineView/ViewControl"]
 layout_mode = 1
@@ -141,11 +185,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-theme = ExtResource("3_u3ee2")
+theme = SubResource("Theme_jjugd")
 script = ExtResource("4_vo3rl")
 optionViewPrefab = ExtResource("5_axl8p")
-lastLineCharacterNameText = NodePath("ViewControl/LastLineCharacterNameText")
-lastLineText = NodePath("ViewControl/LastLineText")
+lastLineCharacterNameText = NodePath("ViewControl/Name Panel/CharacterNameText")
+lastLineText = NodePath("ViewControl/Last Line Panel/LastLineText")
 viewControl = NodePath("ViewControl")
 boxContainer = NodePath("ViewControl/VBoxContainer")
 fadeTime = 0.0
@@ -173,16 +217,21 @@ offset_bottom = 287.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="LastLineText" type="RichTextLabel" parent="OptionsListView/ViewControl"]
+[node name="Last Line Panel" type="PanelContainer" parent="OptionsListView/ViewControl"]
+show_behind_parent = true
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -610.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -34.0
 offset_top = -28.0
-offset_right = 279.0
-offset_bottom = 57.0
+offset_right = -297.0
+offset_bottom = -624.0
 grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LastLineText" type="RichTextLabel" parent="OptionsListView/ViewControl/Last Line Panel"]
+layout_mode = 2
 theme_override_font_sizes/bold_italics_font_size = 36
 theme_override_font_sizes/italics_font_size = 36
 theme_override_font_sizes/mono_font_size = 36
@@ -192,31 +241,23 @@ bbcode_enabled = true
 text = "The last line text goes here"
 scroll_active = false
 
-[node name="ColorRect" type="ColorRect" parent="OptionsListView/ViewControl/LastLineText"]
-modulate = Color(0.203922, 0.192157, 0.192157, 0.458824)
+[node name="Name Panel" type="PanelContainer" parent="OptionsListView/ViewControl"]
 show_behind_parent = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -35.0
+offset_top = -95.0
+offset_right = -611.0
+offset_bottom = -684.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("3_aipk0")
 
-[node name="LastLineCharacterNameText" type="RichTextLabel" parent="OptionsListView/ViewControl"]
-visible = false
+[node name="CharacterNameText" type="RichTextLabel" parent="OptionsListView/ViewControl/Name Panel"]
 self_modulate = Color(0.321569, 0.87451, 0.254902, 1)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -607.0
-offset_top = -415.0
-offset_right = 279.0
-offset_bottom = -362.0
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 2
 theme_override_font_sizes/bold_italics_font_size = 36
 theme_override_font_sizes/italics_font_size = 36
 theme_override_font_sizes/mono_font_size = 36
@@ -224,13 +265,6 @@ theme_override_font_sizes/normal_font_size = 36
 theme_override_font_sizes/bold_font_size = 36
 bbcode_enabled = true
 text = "Character Name"
-
-[node name="ColorRect" type="ColorRect" parent="OptionsListView/ViewControl/LastLineCharacterNameText"]
-modulate = Color(0.203922, 0.192157, 0.192157, 0.458824)
-show_behind_parent = true
-layout_mode = 0
-anchor_right = 1.0
-anchor_bottom = 1.0
 
 [node name="InMemoryVariableStorage" type="Node" parent="."]
 script = ExtResource("6_n02yu")
