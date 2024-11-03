@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://lyxpf6uvfvhy"]
+[gd_scene load_steps=6 format=3 uid="uid://lyxpf6uvfvhy"]
 
 [ext_resource type="PackedScene" uid="uid://c6k5nnpbypshi" path="res://addons/maaacks_menus_template/base/scenes/menus/main_menu/main_menu.tscn" id="1_3q2ev"]
 [ext_resource type="Script" path="res://scenes/gui/menus/main_menu/main_menu.gd" id="2_lfebh"]
 [ext_resource type="PackedScene" uid="uid://cxkmqi13ilvx0" path="res://scenes/gui/menus/options_menu/master_options_menu_with_tabs.tscn" id="3_8st7n"]
 [ext_resource type="PackedScene" uid="uid://bivhdbpv0337y" path="res://scenes/gui/credits/credits.tscn" id="4_h132w"]
+[ext_resource type="Texture2D" uid="uid://uplsypxrud4g" path="res://assets/UI/Logov2_Transparent.png" id="5_eoc5e"]
 
 [node name="MainMenu" instance=ExtResource("1_3q2ev")]
 script = ExtResource("2_lfebh")
@@ -15,8 +16,31 @@ credits_packed_scene = ExtResource("4_h132w")
 bus = &"Master"
 
 [node name="TitleLabel" parent="MenuContainer/TitleMargin/TitleContainer" index="0"]
+visible = false
 offset_bottom = 166.0
 text = "Abyssal Express"
+
+[node name="CenterContainer" type="CenterContainer" parent="MenuContainer/TitleMargin/TitleContainer" index="1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.346
+offset_right = -1112.0
+offset_bottom = -173.136
+
+[node name="MarginContainer" type="MarginContainer" parent="MenuContainer/TitleMargin/TitleContainer" index="2"]
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 0.36
+offset_left = 365.0
+offset_top = -26.0
+offset_right = -392.0
+offset_bottom = 27.24
+
+[node name="TextureRect" type="TextureRect" parent="MenuContainer/TitleMargin/TitleContainer/MarginContainer" index="0"]
+layout_mode = 2
+texture = ExtResource("5_eoc5e")
+expand_mode = 2
 
 [node name="SubTitleMargin" parent="MenuContainer" index="1"]
 visible = false
