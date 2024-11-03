@@ -8,9 +8,3 @@
 offset = Vector2(105.875, 125.02)
 scale = Vector2(0.765, 0.765)
 transform = Transform2D(0.765, 0, 0, 0.765, 105.875, 125.02)
-
-[node name="DialogueRunner" parent="YarnSpinnerCanvasLayer" index="0"]
-startNode = "test"
-startAutomatically = true
-
-[editable path="YarnSpinnerCanvasLayer"]
