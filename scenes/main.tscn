@@ -11,4 +11,5 @@ offset_top = 429.0
 offset_right = 259.0
 offset_bottom = 429.0
 scale = Vector2(0.66, 0.66)
+StartNode = "temp_build_message"
 CharacterPortrait = ExtResource("2_1rgh5")

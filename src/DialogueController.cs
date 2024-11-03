@@ -14,6 +14,8 @@ public partial class DialogueController : Control
 		dialogueRunner = GetNode<DialogueRunner>("DialogueRunner");
 		dialogueRunner.Connect("onNodeStart", new Callable(this, MethodName.OnDialogueStart));
 		dialogueRunner.Connect("onDialogueComplete", new Callable(this, MethodName.OnDialogueComplete));
+
+		dialogueRunner.StartDialogue(StartNode);
 	}
 
 	public void OnDialogueStart() {
@@ -23,6 +25,8 @@ public partial class DialogueController : Control
 	public void OnDialogueComplete() {
 		portraitRect.Visible = false;
 	}
+
+	[Export] public String StartNode;
 
 	private Texture2D _characterPortrait;
 	[Export] public Texture2D CharacterPortrait
