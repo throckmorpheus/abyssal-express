@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6ptgce40v0xq"
-path="res://.godot/imported/Carriage_2_BKG_Lit.png-ff860471eb4d9f668dc392f2c3d9cd1e.ctex"
+uid="uid://bx0lf0l6epctu"
+path="res://.godot/imported/Carriage_2_BKG_Lit.png-e2582ffaeb97481e6dfe52fab148b0fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Carriage_2_BKG_Lit.png"
-dest_files=["res://.godot/imported/Carriage_2_BKG_Lit.png-ff860471eb4d9f668dc392f2c3d9cd1e.ctex"]
+source_file="res://assets/Backgrounds/Carriage_2_BKG_Lit.png"
+dest_files=["res://.godot/imported/Carriage_2_BKG_Lit.png-e2582ffaeb97481e6dfe52fab148b0fb.ctex"]
 
 [params]
 

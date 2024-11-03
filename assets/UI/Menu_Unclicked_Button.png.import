@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dufr67wu72xhd"
-path="res://.godot/imported/Dialogue_Next_Button_Clicked.png-a8c881df7dab7453762c3322cbe9f7da.ctex"
+uid="uid://crfpvrnweeuys"
+path="res://.godot/imported/Menu_Unclicked_Button.png-f755c675f70849699b8837e4c5fd656a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/theme/Dialogue_Next_Button_Clicked.png"
-dest_files=["res://.godot/imported/Dialogue_Next_Button_Clicked.png-a8c881df7dab7453762c3322cbe9f7da.ctex"]
+source_file="res://assets/UI/Menu_Unclicked_Button.png"
+dest_files=["res://.godot/imported/Menu_Unclicked_Button.png-f755c675f70849699b8837e4c5fd656a.ctex"]
 
 [params]
 

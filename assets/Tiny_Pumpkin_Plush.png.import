@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3we1berrop0j"
-path="res://.godot/imported/Dialogue_Next_Button_Hovered.png-ac30e6050fdb451676a254a7df96271f.ctex"
+uid="uid://dn5qcak28xudh"
+path="res://.godot/imported/Tiny_Pumpkin_Plush.png-268d62e88bf9efa4397eb2aba956b4cd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/theme/Dialogue_Next_Button_Hovered.png"
-dest_files=["res://.godot/imported/Dialogue_Next_Button_Hovered.png-ac30e6050fdb451676a254a7df96271f.ctex"]
+source_file="res://assets/Tiny_Pumpkin_Plush.png"
+dest_files=["res://.godot/imported/Tiny_Pumpkin_Plush.png-268d62e88bf9efa4397eb2aba956b4cd.ctex"]
 
 [params]
 

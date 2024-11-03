@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crfpvrnweeuys"
-path="res://.godot/imported/Menu_Unclicked_Button.png-1513e0b817ad52baeaa436623a3af53e.ctex"
+uid="uid://uplsypxrud4g"
+path="res://.godot/imported/Logov2_Transparent.png-f60f1cabb5c440d65d6b0185d0b389cc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/theme/Menu_Unclicked_Button.png"
-dest_files=["res://.godot/imported/Menu_Unclicked_Button.png-1513e0b817ad52baeaa436623a3af53e.ctex"]
+source_file="res://assets/UI/Logov2_Transparent.png"
+dest_files=["res://.godot/imported/Logov2_Transparent.png-f60f1cabb5c440d65d6b0185d0b389cc.ctex"]
 
 [params]
 

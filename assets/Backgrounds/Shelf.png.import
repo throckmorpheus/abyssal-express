@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://e1tpctq0g8fu"
-path="res://.godot/imported/Dialogue_Next_Button_Unclicked.png-2451bf051f58fc388ff59c528968c30b.ctex"
+uid="uid://d3qvmqy1oeob0"
+path="res://.godot/imported/Shelf.png-808435c6cef0367273c6a222008a5865.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/theme/Dialogue_Next_Button_Unclicked.png"
-dest_files=["res://.godot/imported/Dialogue_Next_Button_Unclicked.png-2451bf051f58fc388ff59c528968c30b.ctex"]
+source_file="res://assets/Backgrounds/Shelf.png"
+dest_files=["res://.godot/imported/Shelf.png-808435c6cef0367273c6a222008a5865.ctex"]
 
 [params]
 

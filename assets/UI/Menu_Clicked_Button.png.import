@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdr5sbxrbintj"
-path="res://.godot/imported/Carriage_2_BKG.png-e6f62528579450670cb6a522d81a502f.ctex"
+uid="uid://c6ugqwf4kovwi"
+path="res://.godot/imported/Menu_Clicked_Button.png-828ce697d776fd02e0a210fcd46ca516.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Carriage_2_BKG.png"
-dest_files=["res://.godot/imported/Carriage_2_BKG.png-e6f62528579450670cb6a522d81a502f.ctex"]
+source_file="res://assets/UI/Menu_Clicked_Button.png"
+dest_files=["res://.godot/imported/Menu_Clicked_Button.png-828ce697d776fd02e0a210fcd46ca516.ctex"]
 
 [params]
 

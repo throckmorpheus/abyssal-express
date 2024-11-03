@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjo58dstq7uoy"
-path="res://.godot/imported/Carriage_1_BKG.png-8a81b6d65f2821598da723d9517b700d.ctex"
+uid="uid://b3we1berrop0j"
+path="res://.godot/imported/Dialogue_Next_Button_Hovered.png-e9200543a1354a9b6218eccdaef28237.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Carriage_1_BKG.png"
-dest_files=["res://.godot/imported/Carriage_1_BKG.png-8a81b6d65f2821598da723d9517b700d.ctex"]
+source_file="res://assets/UI/Dialogue_Next_Button_Hovered.png"
+dest_files=["res://.godot/imported/Dialogue_Next_Button_Hovered.png-e9200543a1354a9b6218eccdaef28237.ctex"]
 
 [params]
 
