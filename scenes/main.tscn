@@ -5,6 +5,6 @@
 [node name="Main" type="Node2D"]
 
 [node name="YarnSpinnerCanvasLayer" parent="." instance=ExtResource("1_qpnv4")]
-offset = Vector2(105.875, 125.02)
-scale = Vector2(0.765, 0.765)
-transform = Transform2D(0.765, 0, 0, 0.765, 105.875, 125.02)
+offset = Vector2(257.7, 443.215)
+scale = Vector2(0.61, 0.61)
+transform = Transform2D(0.61, 0, 0, 0.61, 257.7, 443.215)
