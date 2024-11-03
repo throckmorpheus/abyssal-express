@@ -276,7 +276,7 @@ _data = {
 "walking": SubResource("Animation_hecbn")
 }
 
-[node name="PlayerCharacter" type="CharacterBody2D"]
+[node name="PlayerCharacter" type="Node2D"]
 script = ExtResource("1_1sd0k")
 
 [node name="Polygons" type="Node2D" parent="."]
@@ -467,6 +467,7 @@ rest = Transform2D(1, 0, 0, 1, -34, 15)
 
 [node name="knee_r" type="Bone2D" parent="Skeleton2D/hip/leg_top_r"]
 position = Vector2(1, 222)
+scale = Vector2(1, 1)
 rest = Transform2D(1, 0, 0, 1, 1, 222)
 
 [node name="ankle_r" type="Bone2D" parent="Skeleton2D/hip/leg_top_r/knee_r"]
@@ -483,7 +484,6 @@ rest = Transform2D(1, 0, 0, 1, 39, 17)
 
 [node name="knee_l" type="Bone2D" parent="Skeleton2D/hip/leg_top_l"]
 position = Vector2(2, 218)
-scale = Vector2(1, 1)
 rest = Transform2D(1, 0, 0, 1, 2, 218)
 
 [node name="ankle_l" type="Bone2D" parent="Skeleton2D/hip/leg_top_l/knee_l"]

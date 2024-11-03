@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class HumanoidAnimator : CharacterBody2D
+public partial class HumanoidAnimator : Node2D
 {
     private AnimationPlayer animationPlayer;
 
