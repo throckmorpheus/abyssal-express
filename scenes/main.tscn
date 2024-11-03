@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cc7wg51ux5jq"]
+[gd_scene load_steps=3 format=3 uid="uid://cc7wg51ux5jq"]
 
 [ext_resource type="PackedScene" uid="uid://dcbuucqifkh4t" path="res://scenes/gui/dialogue.tscn" id="1_qpnv4"]
+[ext_resource type="Texture2D" uid="uid://b14w71lcknkcj" path="res://assets/characters/Portraits/Child Rat.png" id="2_1rgh5"]
 
 [node name="Main" type="Node2D"]
 
@@ -10,3 +11,4 @@ offset_top = 429.0
 offset_right = 259.0
 offset_bottom = 429.0
 scale = Vector2(0.66, 0.66)
+CharacterPortrait = ExtResource("2_1rgh5")

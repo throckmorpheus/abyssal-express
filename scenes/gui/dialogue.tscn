@@ -1,22 +1,23 @@
 [gd_scene load_steps=11 format=3 uid="uid://dcbuucqifkh4t"]
 
 [ext_resource type="Script" path="res://addons/YarnSpinner-Godot/Runtime/DialogueRunner.cs" id="1_edw52"]
+[ext_resource type="Script" path="res://src/DialogueController.cs" id="1_pde4n"]
 [ext_resource type="Resource" uid="uid://dvot4cuiho8td" path="res://Abyssal Express.yarnproject" id="2_hp0q0"]
 [ext_resource type="Theme" uid="uid://cc06u3s0c7cd1" path="res://assets/theme/dialogue_nameplate.tres" id="3_aipk0"]
 [ext_resource type="Script" path="res://addons/YarnSpinner-Godot/Runtime/Views/LineView.cs" id="3_ktu6m"]
-[ext_resource type="Texture2D" uid="uid://b14w71lcknkcj" path="res://assets/characters/Portraits/Child Rat.png" id="3_okjdu"]
 [ext_resource type="Theme" uid="uid://ccc5spa7n20ed" path="res://assets/theme/dialogue.tres" id="3_u3ee2"]
 [ext_resource type="Script" path="res://addons/YarnSpinner-Godot/Runtime/Views/OptionsListView.cs" id="4_vo3rl"]
 [ext_resource type="PackedScene" uid="uid://b56ngcrq31nc5" path="res://addons/YarnSpinner-Godot/Scenes/OptionView.tscn" id="5_axl8p"]
 [ext_resource type="Script" path="res://addons/YarnSpinner-Godot/Runtime/InMemoryVariableStorage.cs" id="6_n02yu"]
 [ext_resource type="Script" path="res://addons/YarnSpinner-Godot/Runtime/LineProviders/TextLineProvider.cs" id="7_maeer"]
 
-[node name="YarnSpinnerCanvasLayer" type="Control"]
+[node name="Dialogue" type="Control"]
 layout_mode = 3
 anchor_right = 0.794
 anchor_bottom = 0.423
 offset_right = -914.688
 offset_bottom = -274.104
+script = ExtResource("1_pde4n")
 
 [node name="DialogueRunner" type="Control" parent="." node_paths=PackedStringArray("variableStorage", "dialogueViews", "lineProvider")]
 layout_mode = 1
@@ -50,7 +51,6 @@ offset_left = -500.0
 offset_top = -1497.0
 offset_right = 500.0
 offset_bottom = 3.0
-texture = ExtResource("3_okjdu")
 
 [node name="LineView" type="Control" parent="." node_paths=PackedStringArray("characterNameText", "continueButton")]
 layout_mode = 1
