@@ -7,7 +7,7 @@ valid=false
 
 [deps]
 
-source_file="res://assets/Characters/Slug/Slug_Ribbon.png"
+source_file="res://assets/characters/Slug/Slug_Ribbon.png"
 
 [params]
 

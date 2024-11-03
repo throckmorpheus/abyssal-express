@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjdr7oynb6ar2"
-path="res://.godot/imported/Mummy Reference.png-fbb78f422ad94c26c2c6ca53c0251d43.ctex"
+path="res://.godot/imported/Mummy Reference.png-4cb67de4bc26c241574fca2ffec51d57.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Characters/mummy/Mummy Reference.png"
-dest_files=["res://.godot/imported/Mummy Reference.png-fbb78f422ad94c26c2c6ca53c0251d43.ctex"]
+source_file="res://assets/characters/mummy/Mummy Reference.png"
+dest_files=["res://.godot/imported/Mummy Reference.png-4cb67de4bc26c241574fca2ffec51d57.ctex"]
 
 [params]
 

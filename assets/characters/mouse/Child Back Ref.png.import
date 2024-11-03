@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xy0uvdfueah1"
-path="res://.godot/imported/Child Back Ref.png-1b12add10c20cb552ef5ae911b95bce8.ctex"
+path="res://.godot/imported/Child Back Ref.png-1801e60f68606fb3566fb215a913d8b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Characters/mouse/Child Back Ref.png"
-dest_files=["res://.godot/imported/Child Back Ref.png-1b12add10c20cb552ef5ae911b95bce8.ctex"]
+source_file="res://assets/characters/mouse/Child Back Ref.png"
+dest_files=["res://.godot/imported/Child Back Ref.png-1801e60f68606fb3566fb215a913d8b7.ctex"]
 
 [params]
 
