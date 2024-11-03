@@ -31,7 +31,7 @@ script = ExtResource("1_edw52")
 yarnProject = ExtResource("2_hp0q0")
 variableStorage = NodePath("../InMemoryVariableStorage")
 dialogueViews = [NodePath("../LineView"), NodePath("../OptionsListView")]
-startNode = "test"
+startNode = "temp_build_message"
 lineProvider = NodePath("../TextLineProvider")
 
 [node name="VariableDebugText" type="RichTextLabel" parent="."]

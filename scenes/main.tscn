@@ -5,7 +5,7 @@
 
 [node name="Main" type="Node2D"]
 
-[node name="YarnSpinnerCanvasLayer" parent="." instance=ExtResource("1_qpnv4")]
+[node name="Dialogue" parent="." instance=ExtResource("1_qpnv4")]
 offset_left = 259.0
 offset_top = 429.0
 offset_right = 259.0

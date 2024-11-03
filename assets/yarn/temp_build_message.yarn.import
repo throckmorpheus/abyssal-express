@@ -1,0 +1,14 @@
+[remap]
+
+importer="yarnscript"
+type="Resource"
+uid="uid://tem6kvsmmvi5"
+path="res://.godot/imported/temp_build_message.yarn-4554d7a617effcd2b7d2720500640d1b.tres"
+
+[deps]
+
+source_file="res://assets/yarn/temp_build_message.yarn"
+dest_files=["res://.godot/imported/temp_build_message.yarn-4554d7a617effcd2b7d2720500640d1b.tres"]
+
+[params]
+
