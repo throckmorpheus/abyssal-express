@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbcthrijfkcc0"
-path="res://.godot/imported/Carriage_2_BKG_Lit.png-e2582ffaeb97481e6dfe52fab148b0fb.ctex"
+uid="uid://dphfwktu25xfi"
+path="res://.godot/imported/Child Back Seperated.png-9c74a27895c2a22e0c1f1e739af96fd3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Backgrounds/Carriage_2_BKG_Lit.png"
-dest_files=["res://.godot/imported/Carriage_2_BKG_Lit.png-e2582ffaeb97481e6dfe52fab148b0fb.ctex"]
+source_file="res://assets/Characters/mouse/Child Back Seperated.png"
+dest_files=["res://.godot/imported/Child Back Seperated.png-9c74a27895c2a22e0c1f1e739af96fd3.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbcthrijfkcc0"
-path="res://.godot/imported/Carriage_2_BKG_Lit.png-e2582ffaeb97481e6dfe52fab148b0fb.ctex"
+uid="uid://cmq60h8452yoc"
+path="res://.godot/imported/temp puppet.png-257d5f17ba631b1a145ddd2a3d789e9d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Backgrounds/Carriage_2_BKG_Lit.png"
-dest_files=["res://.godot/imported/Carriage_2_BKG_Lit.png-e2582ffaeb97481e6dfe52fab148b0fb.ctex"]
+source_file="res://assets/Characters/temp puppet.png"
+dest_files=["res://.godot/imported/temp puppet.png-257d5f17ba631b1a145ddd2a3d789e9d.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbcthrijfkcc0"
-path="res://.godot/imported/Carriage_2_BKG_Lit.png-e2582ffaeb97481e6dfe52fab148b0fb.ctex"
+uid="uid://d1vypkrqq5r5t"
+path="res://.godot/imported/Chid Side Ref.png-c6fa9e0afc2152affd48fb19ad4a0683.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Backgrounds/Carriage_2_BKG_Lit.png"
-dest_files=["res://.godot/imported/Carriage_2_BKG_Lit.png-e2582ffaeb97481e6dfe52fab148b0fb.ctex"]
+source_file="res://assets/Characters/mouse/Chid Side Ref.png"
+dest_files=["res://.godot/imported/Chid Side Ref.png-c6fa9e0afc2152affd48fb19ad4a0683.ctex"]
 
 [params]
 

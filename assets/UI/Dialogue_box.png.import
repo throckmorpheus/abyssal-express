@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbcthrijfkcc0"
-path="res://.godot/imported/Carriage_2_BKG_Lit.png-e2582ffaeb97481e6dfe52fab148b0fb.ctex"
+uid="uid://d3j3fdc6bmo4v"
+path="res://.godot/imported/Dialogue_box.png-36e3a01e3d727b6138298e41315f1e90.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Backgrounds/Carriage_2_BKG_Lit.png"
-dest_files=["res://.godot/imported/Carriage_2_BKG_Lit.png-e2582ffaeb97481e6dfe52fab148b0fb.ctex"]
+source_file="res://assets/UI/Dialogue_box.png"
+dest_files=["res://.godot/imported/Dialogue_box.png-36e3a01e3d727b6138298e41315f1e90.ctex"]
 
 [params]
 
