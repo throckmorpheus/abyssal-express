@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://dcbuucqifkh4t"]
+[gd_scene load_steps=9 format=3 uid="uid://dcbuucqifkh4t"]
 
 [ext_resource type="Script" path="res://addons/YarnSpinner-Godot/Runtime/DialogueRunner.cs" id="1_edw52"]
 [ext_resource type="Resource" uid="uid://dvot4cuiho8td" path="res://Abyssal Express.yarnproject" id="2_hp0q0"]
 [ext_resource type="Script" path="res://addons/YarnSpinner-Godot/Runtime/Views/LineView.cs" id="3_ktu6m"]
+[ext_resource type="Theme" uid="uid://ccc5spa7n20ed" path="res://assets/theme/dialogue.tres" id="3_u3ee2"]
 [ext_resource type="Script" path="res://addons/YarnSpinner-Godot/Runtime/Views/OptionsListView.cs" id="4_vo3rl"]
 [ext_resource type="PackedScene" uid="uid://b56ngcrq31nc5" path="res://addons/YarnSpinner-Godot/Scenes/OptionView.tscn" id="5_axl8p"]
 [ext_resource type="Script" path="res://addons/YarnSpinner-Godot/Runtime/InMemoryVariableStorage.cs" id="6_n02yu"]
@@ -35,6 +36,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+theme = ExtResource("3_u3ee2")
 script = ExtResource("3_ktu6m")
 viewControlPath = NodePath("ViewControl")
 useFadeEffect = false
@@ -139,6 +141,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+theme = ExtResource("3_u3ee2")
 script = ExtResource("4_vo3rl")
 optionViewPrefab = ExtResource("5_axl8p")
 lastLineCharacterNameText = NodePath("ViewControl/LastLineCharacterNameText")

@@ -1,9 +1,9 @@
-[gd_resource type="Theme" load_steps=11 format=3 uid="uid://cp464ie1k50h7"]
+[gd_resource type="Theme" load_steps=10 format=3 uid="uid://cp464ie1k50h7"]
 
 [ext_resource type="FontFile" uid="uid://dd5akmaq5m6c0" path="res://assets/font/atwriter.ttf" id="1_jqmu0"]
-[ext_resource type="Texture2D" uid="uid://c3lavu8c2hkco" path="res://assets/UI/Menu_Hovered_Button.png" id="2_bjnge"]
-[ext_resource type="Texture2D" uid="uid://crfpvrnweeuys" path="res://assets/UI/Menu_Unclicked_Button.png" id="3_o18ip"]
-[ext_resource type="Texture2D" uid="uid://c6ugqwf4kovwi" path="res://assets/UI/Menu_Clicked_Button.png" id="4_a4vx3"]
+[ext_resource type="Texture2D" uid="uid://c6ugqwf4kovwi" path="res://assets/UI/Menu_Clicked_Button.png" id="2_20i1h"]
+[ext_resource type="Texture2D" uid="uid://c3lavu8c2hkco" path="res://assets/UI/Menu_Hovered_Button.png" id="3_3ultf"]
+[ext_resource type="Texture2D" uid="uid://crfpvrnweeuys" path="res://assets/UI/Menu_Unclicked_Button.png" id="4_cj58j"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qijq3"]
 content_margin_left = 4.0
@@ -17,15 +17,12 @@ corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_clbbh"]
-load_path = "res://.godot/imported/Menu_Hovered_Button.png-264f34917cce3318837dd41747af1f2a.ctex"
-
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l2j4e"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
 content_margin_bottom = 4.0
-texture = SubResource("CompressedTexture2D_clbbh")
+texture = ExtResource("2_20i1h")
 texture_margin_left = 8.0
 texture_margin_top = 8.0
 texture_margin_right = 8.0
@@ -36,7 +33,7 @@ content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
 content_margin_bottom = 4.0
-texture = ExtResource("2_bjnge")
+texture = ExtResource("3_3ultf")
 texture_margin_left = 8.0
 texture_margin_top = 8.0
 texture_margin_right = 8.0
@@ -47,7 +44,7 @@ content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
 content_margin_bottom = 4.0
-texture = ExtResource("3_o18ip")
+texture = ExtResource("4_cj58j")
 texture_margin_left = 8.0
 texture_margin_top = 8.0
 texture_margin_right = 8.0
@@ -58,7 +55,7 @@ content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
 content_margin_bottom = 4.0
-texture = ExtResource("4_a4vx3")
+texture = ExtResource("2_20i1h")
 texture_margin_left = 8.0
 texture_margin_top = 8.0
 texture_margin_right = 8.0

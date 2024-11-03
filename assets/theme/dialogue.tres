@@ -1,0 +1,49 @@
+[gd_resource type="Theme" load_steps=9 format=3 uid="uid://ccc5spa7n20ed"]
+
+[ext_resource type="FontFile" uid="uid://dd5akmaq5m6c0" path="res://assets/font/atwriter.ttf" id="1_3rd6t"]
+[ext_resource type="Texture2D" uid="uid://b3we1berrop0j" path="res://assets/UI/Dialogue_Next_Button_Hovered.png" id="1_j0lrq"]
+[ext_resource type="Texture2D" uid="uid://e1tpctq0g8fu" path="res://assets/UI/Dialogue_Next_Button_Unclicked.png" id="2_inydj"]
+[ext_resource type="Texture2D" uid="uid://dufr67wu72xhd" path="res://assets/UI/Dialogue_Next_Button_Clicked.png" id="3_v2imk"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tj6xd"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+texture = ExtResource("1_j0lrq")
+texture_margin_left = 8.0
+texture_margin_right = 48.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dwa6a"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+texture = ExtResource("1_j0lrq")
+texture_margin_left = 8.0
+texture_margin_right = 48.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5nxb5"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+texture = ExtResource("2_inydj")
+texture_margin_left = 8.0
+texture_margin_right = 48.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i0q4k"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+texture = ExtResource("3_v2imk")
+texture_margin_left = 8.0
+texture_margin_right = 48.0
+
+[resource]
+Button/fonts/font = ExtResource("1_3rd6t")
+Button/styles/focus = SubResource("StyleBoxTexture_tj6xd")
+Button/styles/hover = SubResource("StyleBoxTexture_dwa6a")
+Button/styles/normal = SubResource("StyleBoxTexture_5nxb5")
+Button/styles/pressed = SubResource("StyleBoxTexture_i0q4k")
