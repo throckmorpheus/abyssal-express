@@ -1,13 +1,18 @@
 using Godot;
 using System;
 
+
 public partial class Player : Area2D
 {
+[Signal]
+    public delegate void talkEventHandler(int entity);
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
 		ScreenSize = GetViewportRect().Size;
+		var char1 = GetNode<Character1>("Character1");
+		
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -16,6 +21,8 @@ public partial class Player : Area2D
 		float mouseposx = GetGlobalMousePosition().X;
 		
 		var velocity = Vector2.Zero;
+		//if talking dont move
+		if(talking ==false){
 
 		if (Input.IsActionPressed("Move")){
 			Moveto = mouseposx;	
@@ -26,15 +33,10 @@ public partial class Player : Area2D
 				dir =-1;
 			}
 		}
-		if (Input.IsActionPressed("Interact")){
-			
-		}
-		if(Input.IsActionPressed("Move_right")){
-			Moveto = Position.X +100;
-			
+		
+		talk += talktime;
 
-		}
-
+		
 		var animatedsprite2D = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 		if(dir > 0){
 		if (Position.X < Moveto){
@@ -62,17 +64,35 @@ public partial class Player : Area2D
 			animatedsprite2D.Play();
 		}}
 			Position = new Vector2(
-    			x: Mathf.Clamp(Position.X, 30, ScreenSize.X -30),
-    			y: Mathf.Clamp(Position.Y, 0, ScreenSize.Y)
+				x: Mathf.Clamp(Position.X, 30, ScreenSize.X -30),
+				y: Mathf.Clamp(Position.Y, 0, ScreenSize.Y)
 			);
+		
+		}
+
+		if(Position.X > ScreenSize.X -50){
+			//next train
+		}
+
+		if(Position.X < 50){
+			//previous train
+		}
+
+	}
+	private void talktime(int entity){
+		talking =true;
 	}
 
+
+
+
 	[Export]
-    public int Speed { get; set; } = 200; // How fast the player will move (pixels/sec).
-	//public float PlayerPos = 0;
+	public int Speed { get; set; } = 200; // How fast the player will move (pixels/sec).
+	private bool talking = false;
+	private bool inrange = false;
 	private float Moveto;
 	private float startpos;
 	private int dir=0;
-    public Vector2 ScreenSize; // Size of the game window.
+	public Vector2 ScreenSize; // Size of the game window.
 
 }
