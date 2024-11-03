@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctbnp61fejsfk"
-path="res://.godot/imported/Mummy Seperated .png-abe578c85560b67b3c9ff05a0798d188.ctex"
+path="res://.godot/imported/Mummy Seperated .png-940b8e13d3905ae634453ee385d92988.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/mummy/Mummy Seperated .png"
-dest_files=["res://.godot/imported/Mummy Seperated .png-abe578c85560b67b3c9ff05a0798d188.ctex"]
+source_file="res://assets/Characters/mummy/Mummy Seperated .png"
+dest_files=["res://.godot/imported/Mummy Seperated .png-940b8e13d3905ae634453ee385d92988.ctex"]
 
 [params]
 

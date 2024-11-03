@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bg2b4mmiqj6u4"
-path="res://.godot/imported/Child Side Seperated.png-98694c15ad1942ec1f7ce0640fb35716.ctex"
+path="res://.godot/imported/Child Side Seperated.png-cf278e79d49c77991660de7fd516ad49.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/mouse/Child Side Seperated.png"
-dest_files=["res://.godot/imported/Child Side Seperated.png-98694c15ad1942ec1f7ce0640fb35716.ctex"]
+source_file="res://assets/Characters/mouse/Child Side Seperated.png"
+dest_files=["res://.godot/imported/Child Side Seperated.png-cf278e79d49c77991660de7fd516ad49.ctex"]
 
 [params]
 
