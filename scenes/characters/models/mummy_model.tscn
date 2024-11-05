@@ -1,8 +1,8 @@
 [gd_scene load_steps=11 format=3 uid="uid://d1jjhe4vwguwf"]
 
 [ext_resource type="Script" path="res://src/HumanoidAnimator.cs" id="1_amouf"]
-[ext_resource type="Texture2D" uid="uid://ctbnp61fejsfk" path="res://assets/Characters/mummy/Mummy Seperated .png" id="2_7cuss"]
-[ext_resource type="Texture2D" uid="uid://bjdr7oynb6ar2" path="res://assets/Characters/mummy/Mummy Reference.png" id="3_d1bj6"]
+[ext_resource type="Texture2D" uid="uid://ctbnp61fejsfk" path="res://assets/textures/characters/mummy/Mummy Seperated .png" id="2_7cuss"]
+[ext_resource type="Texture2D" uid="uid://bjdr7oynb6ar2" path="res://assets/textures/characters/mummy/Mummy Reference.png" id="3_d1bj6"]
 
 [sub_resource type="Animation" id="Animation_twlw7"]
 length = 0.001

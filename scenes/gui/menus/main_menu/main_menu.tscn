@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://scenes/gui/menus/main_menu/main_menu.gd" id="2_lfebh"]
 [ext_resource type="PackedScene" uid="uid://cxkmqi13ilvx0" path="res://scenes/gui/menus/options_menu/master_options_menu_with_tabs.tscn" id="3_8st7n"]
 [ext_resource type="PackedScene" uid="uid://bivhdbpv0337y" path="res://scenes/gui/credits/credits.tscn" id="4_h132w"]
-[ext_resource type="Texture2D" uid="uid://uplsypxrud4g" path="res://assets/UI/Logov2_Transparent.png" id="5_eoc5e"]
+[ext_resource type="Texture2D" uid="uid://uplsypxrud4g" path="res://assets/textures/ui/Logov2_Transparent.png" id="5_eoc5e"]
 [ext_resource type="AudioStream" uid="uid://x610serhy7f2" path="res://assets/audio/JDSherbert - Ultimate UI SFX Pack - Cursor - 3.wav" id="5_xesnf"]
 [ext_resource type="AudioStream" uid="uid://b22kclbwlhfe7" path="res://assets/audio/JDSherbert - Ultimate UI SFX Pack - Select - 1.wav" id="6_xqaqp"]
 

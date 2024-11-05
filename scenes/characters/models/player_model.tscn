@@ -1,8 +1,8 @@
 [gd_scene load_steps=14 format=3 uid="uid://cjy5pcuenufdo"]
 
 [ext_resource type="Script" path="res://src/HumanoidAnimator.cs" id="1_vofvy"]
-[ext_resource type="Texture2D" uid="uid://kq2qrr3llo83" path="res://assets/Characters/player/player_separated.png" id="2_5ajx1"]
-[ext_resource type="Texture2D" uid="uid://bl4h4yejqsxio" path="res://assets/Characters/player/player_reference.png" id="3_hwoar"]
+[ext_resource type="Texture2D" uid="uid://kq2qrr3llo83" path="res://assets/textures/characters/player/player_separated.png" id="2_5ajx1"]
+[ext_resource type="Texture2D" uid="uid://bl4h4yejqsxio" path="res://assets/textures/characters/player/player_reference.png" id="3_hwoar"]
 
 [sub_resource type="Animation" id="Animation_twlw7"]
 length = 0.001
@@ -453,12 +453,10 @@ rest = Transform2D(1, 0, 0, 1, 0, 0)
 
 [node name="head" type="Bone2D" parent="Skeleton2D/hip/torso_mid/torso_top/neck"]
 position = Vector2(0, -68)
-scale = Vector2(1, 1)
 rest = Transform2D(1, 0, 0, 1, 0, -68)
 
 [node name="shoulder_r" type="Bone2D" parent="Skeleton2D/hip/torso_mid/torso_top"]
 position = Vector2(-76, 26)
-scale = Vector2(1, 1)
 rest = Transform2D(1, 0, 0, 1, -76, 26)
 
 [node name="elbow_r" type="Bone2D" parent="Skeleton2D/hip/torso_mid/torso_top/shoulder_r"]
@@ -477,7 +475,6 @@ bone_angle = 83.536
 
 [node name="shoulder_l" type="Bone2D" parent="Skeleton2D/hip/torso_mid/torso_top"]
 position = Vector2(75, 22)
-scale = Vector2(1, 1)
 rest = Transform2D(1, 0, 0, 1, 75, 22)
 
 [node name="elbow_l" type="Bone2D" parent="Skeleton2D/hip/torso_mid/torso_top/shoulder_l"]

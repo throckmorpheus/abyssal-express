@@ -1,10 +1,10 @@
 [gd_scene load_steps=18 format=3 uid="uid://clyrwshvf5qt6"]
 
 [ext_resource type="Script" path="res://src/HumanoidAnimator.cs" id="1_gvimc"]
-[ext_resource type="Texture2D" uid="uid://dphfwktu25xfi" path="res://assets/Characters/mouse/Child Back Seperated.png" id="2_0wtf8"]
-[ext_resource type="Texture2D" uid="uid://bg2b4mmiqj6u4" path="res://assets/Characters/mouse/Child Side Seperated.png" id="2_oue65"]
-[ext_resource type="Texture2D" uid="uid://d1vypkrqq5r5t" path="res://assets/Characters/mouse/Chid Side Ref.png" id="3_vdccg"]
-[ext_resource type="Texture2D" uid="uid://xy0uvdfueah1" path="res://assets/Characters/mouse/Child Back Ref.png" id="5_owj17"]
+[ext_resource type="Texture2D" uid="uid://dphfwktu25xfi" path="res://assets/textures/characters/mouse girl/Child Back Seperated.png" id="2_0wtf8"]
+[ext_resource type="Texture2D" uid="uid://bg2b4mmiqj6u4" path="res://assets/textures/characters/mouse girl/Child Side Seperated.png" id="2_oue65"]
+[ext_resource type="Texture2D" uid="uid://d1vypkrqq5r5t" path="res://assets/textures/characters/mouse girl/Chid Side Ref.png" id="3_vdccg"]
+[ext_resource type="Texture2D" uid="uid://xy0uvdfueah1" path="res://assets/textures/characters/mouse girl/Child Back Ref.png" id="5_owj17"]
 
 [sub_resource type="Animation" id="Animation_twlw7"]
 length = 0.001
@@ -2346,19 +2346,16 @@ rest = Transform2D(1, 0, 0, 1, -49, 42)
 [node name="tail_1" type="Bone2D" parent="Skeleton2D/hip/tail_0"]
 position = Vector2(-28, -33)
 rotation = -2.51486
-scale = Vector2(1, 1)
 rest = Transform2D(-0.809947, -0.586503, 0.586503, -0.809947, -28, -33)
 
 [node name="tail_2" type="Bone2D" parent="Skeleton2D/hip/tail_0/tail_1"]
 position = Vector2(42.8153, -12.4839)
 rotation = -0.932164
-scale = Vector2(1, 1)
 rest = Transform2D(0.596098, -0.802912, 0.802912, 0.596098, 42.8153, -12.4839)
 
 [node name="tail_3" type="Bone2D" parent="Skeleton2D/hip/tail_0/tail_1/tail_2"]
 position = Vector2(50.3317, -16.635)
 rotation = -0.674604
-scale = Vector2(1, 1)
 rest = Transform2D(0.780954, -0.624588, 0.624588, 0.780954, 50.3317, -16.635)
 
 [node name="tail_4" type="Bone2D" parent="Skeleton2D/hip/tail_0/tail_1/tail_2/tail_3"]
@@ -2378,7 +2375,6 @@ rest = Transform2D(-0.101863, 0.994798, -0.994798, -0.101863, 26.8055, 32.1747)
 [node name="tail_7" type="Bone2D" parent="Skeleton2D/hip/tail_0/tail_1/tail_2/tail_3/tail_4/tail_5/tail_6"]
 position = Vector2(21.0695, 2.46513)
 rotation = 0.645244
-scale = Vector2(1, 1)
 rest = Transform2D(0.798953, 0.601393, -0.601393, 0.798953, 21.0695, 2.46513)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

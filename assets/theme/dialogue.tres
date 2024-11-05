@@ -1,10 +1,10 @@
 [gd_resource type="Theme" load_steps=11 format=3 uid="uid://ccc5spa7n20ed"]
 
 [ext_resource type="FontFile" uid="uid://dd5akmaq5m6c0" path="res://assets/font/atwriter.ttf" id="1_3rd6t"]
-[ext_resource type="Texture2D" uid="uid://b3we1berrop0j" path="res://assets/UI/Dialogue_Next_Button_Hovered.png" id="1_j0lrq"]
-[ext_resource type="Texture2D" uid="uid://e1tpctq0g8fu" path="res://assets/UI/Dialogue_Next_Button_Unclicked.png" id="2_inydj"]
-[ext_resource type="Texture2D" uid="uid://dufr67wu72xhd" path="res://assets/UI/Dialogue_Next_Button_Clicked.png" id="3_v2imk"]
-[ext_resource type="Texture2D" uid="uid://d3j3fdc6bmo4v" path="res://assets/UI/Dialogue_box.png" id="5_aux3c"]
+[ext_resource type="Texture2D" uid="uid://b3we1berrop0j" path="res://assets/textures/ui/Dialogue_Next_Button_Hovered.png" id="1_j0lrq"]
+[ext_resource type="Texture2D" uid="uid://e1tpctq0g8fu" path="res://assets/textures/ui/Dialogue_Next_Button_Unclicked.png" id="2_inydj"]
+[ext_resource type="Texture2D" uid="uid://dufr67wu72xhd" path="res://assets/textures/ui/Dialogue_Next_Button_Clicked.png" id="3_v2imk"]
+[ext_resource type="Texture2D" uid="uid://d3j3fdc6bmo4v" path="res://assets/textures/ui/Dialogue_box.png" id="5_aux3c"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tj6xd"]
 content_margin_left = 4.0
