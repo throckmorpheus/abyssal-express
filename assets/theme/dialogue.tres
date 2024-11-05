@@ -1,0 +1,88 @@
+[gd_resource type="Theme" load_steps=11 format=3 uid="uid://ccc5spa7n20ed"]
+
+[ext_resource type="FontFile" uid="uid://dd5akmaq5m6c0" path="res://assets/font/atwriter.ttf" id="1_3rd6t"]
+[ext_resource type="Texture2D" uid="uid://b3we1berrop0j" path="res://assets/UI/Dialogue_Next_Button_Hovered.png" id="1_j0lrq"]
+[ext_resource type="Texture2D" uid="uid://e1tpctq0g8fu" path="res://assets/UI/Dialogue_Next_Button_Unclicked.png" id="2_inydj"]
+[ext_resource type="Texture2D" uid="uid://dufr67wu72xhd" path="res://assets/UI/Dialogue_Next_Button_Clicked.png" id="3_v2imk"]
+[ext_resource type="Texture2D" uid="uid://d3j3fdc6bmo4v" path="res://assets/UI/Dialogue_box.png" id="5_aux3c"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tj6xd"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+texture = ExtResource("1_j0lrq")
+texture_margin_left = 8.0
+texture_margin_right = 48.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dwa6a"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+texture = ExtResource("1_j0lrq")
+texture_margin_left = 8.0
+texture_margin_right = 48.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5nxb5"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+texture = ExtResource("2_inydj")
+texture_margin_left = 8.0
+texture_margin_right = 48.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i0q4k"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+texture = ExtResource("3_v2imk")
+texture_margin_left = 8.0
+texture_margin_right = 48.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kijrg"]
+texture = ExtResource("5_aux3c")
+texture_margin_left = 27.0
+texture_margin_top = 15.0
+texture_margin_right = 27.0
+texture_margin_bottom = 15.0
+
+[resource]
+default_font = ExtResource("1_3rd6t")
+Button/fonts/font = ExtResource("1_3rd6t")
+Button/styles/focus = SubResource("StyleBoxTexture_tj6xd")
+Button/styles/hover = SubResource("StyleBoxTexture_dwa6a")
+Button/styles/normal = SubResource("StyleBoxTexture_5nxb5")
+Button/styles/pressed = SubResource("StyleBoxTexture_i0q4k")
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_kijrg")
+RichTextLabel/colors/default_color = Color(0.230315, 0.230315, 0.230315, 1)
+RichTextLabel/colors/font_outline_color = Color(0, 0, 0, 1)
+RichTextLabel/colors/font_selected_color = Color(0, 0, 0, 1)
+RichTextLabel/colors/font_shadow_color = Color(0, 0, 0, 1)
+RichTextLabel/colors/selection_color = Color(0, 0, 0, 1)
+RichTextLabel/colors/table_border = Color(0, 0, 0, 1)
+RichTextLabel/colors/table_even_row_bg = Color(0, 0, 0, 1)
+RichTextLabel/colors/table_odd_row_bg = Color(0, 0, 0, 1)
+RichTextLabel/constants/line_separation = 0
+RichTextLabel/constants/outline_size = 0
+RichTextLabel/constants/shadow_offset_x = 0
+RichTextLabel/constants/shadow_offset_y = 0
+RichTextLabel/constants/shadow_outline_size = 0
+RichTextLabel/constants/table_h_separation = 0
+RichTextLabel/constants/table_v_separation = 0
+RichTextLabel/constants/text_highlight_h_padding = 0
+RichTextLabel/constants/text_highlight_v_padding = 0
+RichTextLabel/font_sizes/bold_font_size = 16
+RichTextLabel/font_sizes/bold_italics_font_size = 16
+RichTextLabel/font_sizes/italics_font_size = 16
+RichTextLabel/font_sizes/mono_font_size = 16
+RichTextLabel/font_sizes/normal_font_size = 16
+RichTextLabel/fonts/bold_font = ExtResource("1_3rd6t")
+RichTextLabel/fonts/bold_italics_font = ExtResource("1_3rd6t")
+RichTextLabel/fonts/italics_font = ExtResource("1_3rd6t")
+RichTextLabel/fonts/mono_font = ExtResource("1_3rd6t")
+RichTextLabel/fonts/normal_font = ExtResource("1_3rd6t")
+RichTextLabel/styles/focus = null
+RichTextLabel/styles/normal = null

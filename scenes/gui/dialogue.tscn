@@ -1,0 +1,212 @@
+[gd_scene load_steps=11 format=3 uid="uid://dcbuucqifkh4t"]
+
+[ext_resource type="Script" path="res://addons/YarnSpinner-Godot/Runtime/DialogueRunner.cs" id="1_edw52"]
+[ext_resource type="Script" path="res://src/DialogueController.cs" id="1_pde4n"]
+[ext_resource type="Resource" uid="uid://dvot4cuiho8td" path="res://Abyssal Express.yarnproject" id="2_hp0q0"]
+[ext_resource type="Theme" uid="uid://cc06u3s0c7cd1" path="res://assets/theme/dialogue_nameplate.tres" id="3_aipk0"]
+[ext_resource type="Script" path="res://addons/YarnSpinner-Godot/Runtime/Views/LineView.cs" id="3_ktu6m"]
+[ext_resource type="Theme" uid="uid://ccc5spa7n20ed" path="res://assets/theme/dialogue.tres" id="3_u3ee2"]
+[ext_resource type="Script" path="res://addons/YarnSpinner-Godot/Runtime/Views/OptionsListView.cs" id="4_vo3rl"]
+[ext_resource type="PackedScene" uid="uid://b56ngcrq31nc5" path="res://addons/YarnSpinner-Godot/Scenes/OptionView.tscn" id="5_axl8p"]
+[ext_resource type="Script" path="res://addons/YarnSpinner-Godot/Runtime/InMemoryVariableStorage.cs" id="6_n02yu"]
+[ext_resource type="Script" path="res://addons/YarnSpinner-Godot/Runtime/LineProviders/TextLineProvider.cs" id="7_maeer"]
+
+[node name="Dialogue" type="Control"]
+layout_mode = 3
+anchor_right = 0.794
+anchor_bottom = 0.423
+offset_right = -914.688
+offset_bottom = -274.104
+script = ExtResource("1_pde4n")
+
+[node name="DialogueRunner" type="Control" parent="." node_paths=PackedStringArray("variableStorage", "dialogueViews", "lineProvider")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_edw52")
+yarnProject = ExtResource("2_hp0q0")
+variableStorage = NodePath("../InMemoryVariableStorage")
+dialogueViews = [NodePath("../LineView"), NodePath("../OptionsListView")]
+startAutomatically = false
+lineProvider = NodePath("../TextLineProvider")
+
+[node name="VariableDebugText" type="RichTextLabel" parent="."]
+
+[node name="CharacterPortrait" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 681.0
+offset_top = 24.0
+offset_right = 721.0
+offset_bottom = 64.0
+scale = Vector2(0.45236, 0.45236)
+
+[node name="TextureRect" type="TextureRect" parent="CharacterPortrait"]
+layout_mode = 0
+offset_left = -500.0
+offset_top = -1497.0
+offset_right = 500.0
+offset_bottom = 3.0
+
+[node name="LineView" type="Control" parent="." node_paths=PackedStringArray("characterNameText", "continueButton")]
+layout_mode = 1
+anchors_preset = 0
+mouse_filter = 2
+theme = ExtResource("3_u3ee2")
+script = ExtResource("3_ktu6m")
+viewControlPath = NodePath("ViewControl")
+useFadeEffect = false
+lineTextPath = NodePath("ViewControl/Line Panel/LineText")
+characterNameText = NodePath("ViewControl/Name Panel/CharacterNameText")
+typewriterEffectSpeed = 80.0
+continueButton = NodePath("ViewControl/ContinueButton")
+
+[node name="ViewControl" type="Control" parent="LineView"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Line Panel" type="PanelContainer" parent="LineView/ViewControl"]
+show_behind_parent = true
+layout_mode = 1
+offset_right = 919.0
+offset_bottom = 276.0
+
+[node name="LineText" type="RichTextLabel" parent="LineView/ViewControl/Line Panel"]
+layout_mode = 2
+theme_override_font_sizes/bold_italics_font_size = 36
+theme_override_font_sizes/italics_font_size = 36
+theme_override_font_sizes/mono_font_size = 36
+theme_override_font_sizes/normal_font_size = 36
+theme_override_font_sizes/bold_font_size = 36
+bbcode_enabled = true
+text = "The dialogue text should appear here!"
+
+[node name="ContinueButton" type="Button" parent="LineView/ViewControl"]
+layout_mode = 1
+offset_left = 731.0
+offset_top = 162.0
+offset_right = 963.0
+offset_bottom = 262.0
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 36
+text = "Continue"
+
+[node name="Name Panel" type="PanelContainer" parent="LineView/ViewControl"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 9.0
+offset_top = -98.0
+offset_right = 431.0
+offset_bottom = -13.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_aipk0")
+
+[node name="CharacterNameText" type="RichTextLabel" parent="LineView/ViewControl/Name Panel"]
+layout_mode = 2
+theme_override_font_sizes/bold_italics_font_size = 36
+theme_override_font_sizes/italics_font_size = 36
+theme_override_font_sizes/mono_font_size = 36
+theme_override_font_sizes/normal_font_size = 36
+theme_override_font_sizes/bold_font_size = 36
+bbcode_enabled = true
+text = "Character Name"
+
+[node name="OptionsListView" type="Control" parent="." node_paths=PackedStringArray("lastLineCharacterNameText", "lastLineText", "viewControl", "boxContainer")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("3_u3ee2")
+script = ExtResource("4_vo3rl")
+optionViewPrefab = ExtResource("5_axl8p")
+lastLineCharacterNameText = NodePath("ViewControl/Name Panel/CharacterNameText")
+lastLineText = NodePath("ViewControl/Last Line Panel/LastLineText")
+viewControl = NodePath("ViewControl")
+boxContainer = NodePath("ViewControl/VBoxContainer")
+fadeTime = 0.0
+
+[node name="ViewControl" type="Control" parent="OptionsListView"]
+layout_mode = 1
+anchors_preset = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="OptionsListView/ViewControl"]
+custom_minimum_size = Vector2(160, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 21.0
+offset_top = 88.0
+offset_right = 895.0
+offset_bottom = 270.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Last Line Panel" type="PanelContainer" parent="OptionsListView/ViewControl"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 920.0
+offset_bottom = 82.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LastLineText" type="RichTextLabel" parent="OptionsListView/ViewControl/Last Line Panel"]
+layout_mode = 2
+theme_override_font_sizes/bold_italics_font_size = 36
+theme_override_font_sizes/italics_font_size = 36
+theme_override_font_sizes/mono_font_size = 36
+theme_override_font_sizes/normal_font_size = 36
+theme_override_font_sizes/bold_font_size = 36
+bbcode_enabled = true
+text = "The last line text goes here"
+scroll_active = false
+
+[node name="Name Panel" type="PanelContainer" parent="OptionsListView/ViewControl"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 9.0
+offset_top = -98.0
+offset_right = 431.0
+offset_bottom = -13.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_aipk0")
+
+[node name="CharacterNameText" type="RichTextLabel" parent="OptionsListView/ViewControl/Name Panel"]
+layout_mode = 2
+theme_override_font_sizes/bold_italics_font_size = 36
+theme_override_font_sizes/italics_font_size = 36
+theme_override_font_sizes/mono_font_size = 36
+theme_override_font_sizes/normal_font_size = 36
+theme_override_font_sizes/bold_font_size = 36
+bbcode_enabled = true
+text = "Character Name"
+
+[node name="InMemoryVariableStorage" type="Node" parent="."]
+script = ExtResource("6_n02yu")
+
+[node name="TextLineProvider" type="Node2D" parent="."]
+script = ExtResource("7_maeer")

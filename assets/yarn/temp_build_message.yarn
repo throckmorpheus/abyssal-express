@@ -1,0 +1,10 @@
+title: temp_build_message
+tags:
+---
+Ophelia: Oh, hey there.
+    -> Where am I?
+        Ophelia: Not sure. I think they're still setting things up.
+            -> Setting up what?
+                Ophelia: The game, silly.
+                Ophelia: Papa says they just needed a working build so they could submit to the jam.
+===

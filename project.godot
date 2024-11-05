@@ -11,9 +11,16 @@ config_version=5
 [application]
 
 config/name="Abyssal Express"
-run/main_scene="res://scenes/main.tscn"
+run/main_scene="res://scenes/gui/menus/main_menu/main_menu.tscn"
 config/features=PackedStringArray("4.3", "C#", "GL Compatibility")
 config/icon="res://assets/icon.svg"
+
+[autoload]
+
+AppConfig="*res://addons/maaacks_menus_template/base/scenes/autoloads/app_config.tscn"
+SceneLoader="*res://addons/maaacks_menus_template/base/scenes/autoloads/scene_loader.tscn"
+ProjectMusicController="*res://addons/maaacks_menus_template/base/scenes/autoloads/project_music_controller.tscn"
+ProjectUISoundController="*res://addons/maaacks_menus_template/base/scenes/autoloads/project_ui_sound_controller.tscn"
 
 [dotnet]
 
@@ -23,6 +30,23 @@ project/assembly_name="Abyssal Express"
 
 version_control/plugin_name="GitPlugin"
 version_control/autoload_on_startup=true
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/YarnSpinner-Godot/plugin.cfg", "res://addons/maaacks_menus_template/plugin.cfg")
+
+[gui]
+
+theme/custom="res://assets/theme/gui.tres"
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://addons/maaacks_menus_template/base/translations/menus_translations.en.translation", "res://addons/maaacks_menus_template/base/translations/menus_translations.fr.translation")
+
+[maaacks_menus_template]
+
+disable_plugin_dialogues=true
+copy_path="res://scenes/gui"
 
 [input]
 

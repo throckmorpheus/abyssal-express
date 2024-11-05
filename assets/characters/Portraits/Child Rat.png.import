@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7t7ti0hty4yx"
-path="res://.godot/imported/Dialogue_Box_BKG.png-d23e509274386e5951bc471aa1d9a1e5.ctex"
+uid="uid://b14w71lcknkcj"
+path="res://.godot/imported/Child Rat.png-21271feaf581df868623e83e7c88fbb9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI/Dialogue_Box_BKG.png"
-dest_files=["res://.godot/imported/Dialogue_Box_BKG.png-d23e509274386e5951bc471aa1d9a1e5.ctex"]
+source_file="res://assets/Characters/Portraits/Child Rat.png"
+dest_files=["res://.godot/imported/Child Rat.png-21271feaf581df868623e83e7c88fbb9.ctex"]
 
 [params]
 
