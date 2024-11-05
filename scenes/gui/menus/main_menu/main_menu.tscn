@@ -1,16 +1,22 @@
-[gd_scene load_steps=6 format=3 uid="uid://lyxpf6uvfvhy"]
+[gd_scene load_steps=8 format=3 uid="uid://lyxpf6uvfvhy"]
 
 [ext_resource type="PackedScene" uid="uid://c6k5nnpbypshi" path="res://addons/maaacks_menus_template/base/scenes/menus/main_menu/main_menu.tscn" id="1_3q2ev"]
 [ext_resource type="Script" path="res://scenes/gui/menus/main_menu/main_menu.gd" id="2_lfebh"]
 [ext_resource type="PackedScene" uid="uid://cxkmqi13ilvx0" path="res://scenes/gui/menus/options_menu/master_options_menu_with_tabs.tscn" id="3_8st7n"]
 [ext_resource type="PackedScene" uid="uid://bivhdbpv0337y" path="res://scenes/gui/credits/credits.tscn" id="4_h132w"]
 [ext_resource type="Texture2D" uid="uid://uplsypxrud4g" path="res://assets/UI/Logov2_Transparent.png" id="5_eoc5e"]
+[ext_resource type="AudioStream" uid="uid://x610serhy7f2" path="res://assets/audio/JDSherbert - Ultimate UI SFX Pack - Cursor - 3.wav" id="5_xesnf"]
+[ext_resource type="AudioStream" uid="uid://b22kclbwlhfe7" path="res://assets/audio/JDSherbert - Ultimate UI SFX Pack - Select - 1.wav" id="6_xqaqp"]
 
 [node name="MainMenu" instance=ExtResource("1_3q2ev")]
 script = ExtResource("2_lfebh")
 game_scene_path = "res://scenes/main.tscn"
 options_packed_scene = ExtResource("3_8st7n")
 credits_packed_scene = ExtResource("4_h132w")
+
+[node name="UISoundController" parent="." index="0"]
+button_hovered = ExtResource("5_xesnf")
+button_pressed = ExtResource("6_xqaqp")
 
 [node name="BackgroundMusicPlayer" parent="." index="1"]
 bus = &"Master"

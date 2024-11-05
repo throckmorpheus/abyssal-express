@@ -1,7 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://bsts0einptdfo"]
+[gd_scene load_steps=4 format=3 uid="uid://bsts0einptdfo"]
 
 [ext_resource type="Script" path="res://src/Room.cs" id="1_dnlfj"]
-[ext_resource type="Texture2D" uid="uid://b75q7p6v4itos" path="res://assets/Backgrounds/Carriage_1_BKG.png" id="1_uwdci"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ip55o"]
 size = Vector2(1200, 510)
@@ -20,9 +19,6 @@ script = ExtResource("1_dnlfj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_ip55o")
-
-[node name="Carriage1Bkg" type="Sprite2D" parent="."]
-texture = ExtResource("1_uwdci")
 
 [node name="Floor" type="Path2D" parent="."]
 curve = SubResource("Curve2D_ab1xw")

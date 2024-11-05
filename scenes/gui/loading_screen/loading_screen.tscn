@@ -5,3 +5,9 @@
 
 [node name="LoadingScreen" instance=ExtResource("1_4w12g")]
 script = ExtResource("2_36gsl")
+
+[node name="BackPanel" parent="Control" index="0"]
+visible = false
+
+[node name="BackgroundTextureRect" parent="Control" index="2"]
+visible = false

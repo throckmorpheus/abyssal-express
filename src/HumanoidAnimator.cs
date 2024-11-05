@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class HumanoidAnimator : Node2D
+public partial class HumanoidAnimator : CanvasGroup
 {
     public override void _Ready() {
         base._Ready();

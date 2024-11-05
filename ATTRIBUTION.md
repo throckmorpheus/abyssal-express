@@ -2,16 +2,15 @@
 ## Collaborators
 
 
-## Sourced / Unaffiliated
-### Godot Menus Template
-Author: [Marek Belski](https://github.com/Maaack/Godot-Menus-Template/graphs/contributors)  
-Source: [github: Godot-Menus-Template](https://github.com/Maaack/Godot-Menus-Template)  
-License: [MIT License](LICENSE.txt)
-
+## Assets
 ### Another Typewriter (font)
 Author: Johan Holmdahl
 Source: [dafont: Another Typewrite](https://www.dafont.com/another-typewriter.font)  
 License: Freeware by Johan Holmdahl 1999.
+
+## Ultimate UI SFX Pack
+Author: [JDSherbert](https://jdsherbert.itch.io/)
+Source: [itch.io: Ultimate UI SFX Pack](https://jdsherbert.itch.io/ultimate-ui-sfx-pack)
 
 
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://clyrwshvf5qt6"]
+[gd_scene load_steps=18 format=3 uid="uid://clyrwshvf5qt6"]
 
 [ext_resource type="Script" path="res://src/HumanoidAnimator.cs" id="1_gvimc"]
 [ext_resource type="Texture2D" uid="uid://dphfwktu25xfi" path="res://assets/Characters/mouse/Child Back Seperated.png" id="2_0wtf8"]
@@ -534,7 +534,7 @@ tracks/43/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [-1.33376]
+"values": [0.0]
 }
 tracks/44/type = "value"
 tracks/44/imported = false
@@ -559,6 +559,162 @@ tracks/45/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [0.0]
+}
+tracks/46/type = "value"
+tracks/46/imported = false
+tracks/46/enabled = true
+tracks/46/path = NodePath("Skeleton2D/hip/tail_0/tail_1:position")
+tracks/46/interp = 1
+tracks/46/loop_wrap = true
+tracks/46/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-28, -33)]
+}
+tracks/47/type = "value"
+tracks/47/imported = false
+tracks/47/enabled = true
+tracks/47/path = NodePath("Skeleton2D/hip/tail_0/tail_1:rotation")
+tracks/47/interp = 1
+tracks/47/loop_wrap = true
+tracks/47/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-2.51486]
+}
+tracks/48/type = "value"
+tracks/48/imported = false
+tracks/48/enabled = true
+tracks/48/path = NodePath("Skeleton2D/hip/tail_0/tail_1/tail_2:position")
+tracks/48/interp = 1
+tracks/48/loop_wrap = true
+tracks/48/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(42.8153, -12.4839)]
+}
+tracks/49/type = "value"
+tracks/49/imported = false
+tracks/49/enabled = true
+tracks/49/path = NodePath("Skeleton2D/hip/tail_0/tail_1/tail_2:rotation")
+tracks/49/interp = 1
+tracks/49/loop_wrap = true
+tracks/49/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.932164]
+}
+tracks/50/type = "value"
+tracks/50/imported = false
+tracks/50/enabled = true
+tracks/50/path = NodePath("Skeleton2D/hip/tail_0/tail_1/tail_2/tail_3:position")
+tracks/50/interp = 1
+tracks/50/loop_wrap = true
+tracks/50/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(50.3317, -16.635)]
+}
+tracks/51/type = "value"
+tracks/51/imported = false
+tracks/51/enabled = true
+tracks/51/path = NodePath("Skeleton2D/hip/tail_0/tail_1/tail_2/tail_3:rotation")
+tracks/51/interp = 1
+tracks/51/loop_wrap = true
+tracks/51/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.674604]
+}
+tracks/52/type = "value"
+tracks/52/imported = false
+tracks/52/enabled = true
+tracks/52/path = NodePath("Skeleton2D/hip/tail_0/tail_1/tail_2/tail_3/tail_4:position")
+tracks/52/interp = 1
+tracks/52/loop_wrap = true
+tracks/52/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(62.9253, -12.0998)]
+}
+tracks/53/type = "value"
+tracks/53/imported = false
+tracks/53/enabled = true
+tracks/53/path = NodePath("Skeleton2D/hip/tail_0/tail_1/tail_2/tail_3/tail_4/tail_5:position")
+tracks/53/interp = 1
+tracks/53/loop_wrap = true
+tracks/53/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(50.1599, 2.44636)]
+}
+tracks/54/type = "value"
+tracks/54/imported = false
+tracks/54/enabled = true
+tracks/54/path = NodePath("Skeleton2D/hip/tail_0/tail_1/tail_2/tail_3/tail_4/tail_5:rotation")
+tracks/54/interp = 1
+tracks/54/loop_wrap = true
+tracks/54/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/55/type = "value"
+tracks/55/imported = false
+tracks/55/enabled = true
+tracks/55/path = NodePath("Skeleton2D/hip/tail_0/tail_1/tail_2/tail_3/tail_4/tail_5/tail_6:position")
+tracks/55/interp = 1
+tracks/55/loop_wrap = true
+tracks/55/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(26.8055, 32.1747)]
+}
+tracks/56/type = "value"
+tracks/56/imported = false
+tracks/56/enabled = true
+tracks/56/path = NodePath("Skeleton2D/hip/tail_0/tail_1/tail_2/tail_3/tail_4/tail_5/tail_6:rotation")
+tracks/56/interp = 1
+tracks/56/loop_wrap = true
+tracks/56/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.67284]
+}
+tracks/57/type = "value"
+tracks/57/imported = false
+tracks/57/enabled = true
+tracks/57/path = NodePath("Skeleton2D/hip/tail_0/tail_1/tail_2/tail_3/tail_4/tail_5/tail_6/tail_7:position")
+tracks/57/interp = 1
+tracks/57/loop_wrap = true
+tracks/57/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(21.0695, 2.46513)]
+}
+tracks/58/type = "value"
+tracks/58/imported = false
+tracks/58/enabled = true
+tracks/58/path = NodePath("Skeleton2D/hip/tail_0/tail_1/tail_2/tail_3/tail_4/tail_5/tail_6/tail_7:rotation")
+tracks/58/interp = 1
+tracks/58/loop_wrap = true
+tracks/58/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.645244]
 }
 
 [sub_resource type="Animation" id="Animation_olkpj"]
@@ -1803,7 +1959,9 @@ _data = {
 "face_front": SubResource("Animation_vx6se")
 }
 
-[node name="MouseGirlModel" type="Node2D"]
+[sub_resource type="AnimationRootNode" id="AnimationRootNode_6oqn1"]
+
+[node name="MouseGirlModel" type="CanvasGroup"]
 script = ExtResource("1_gvimc")
 
 [node name="Polygons" type="Node2D" parent="."]
@@ -2183,49 +2341,45 @@ editor_settings/show_bone_gizmo = false
 
 [node name="tail_0" type="Bone2D" parent="Skeleton2D/hip"]
 position = Vector2(-49, 42)
-rotation = -1.33376
 rest = Transform2D(1, 0, 0, 1, -49, 42)
-editor_settings/show_bone_gizmo = false
 
 [node name="tail_1" type="Bone2D" parent="Skeleton2D/hip/tail_0"]
 position = Vector2(-28, -33)
 rotation = -2.51486
+scale = Vector2(1, 1)
 rest = Transform2D(-0.809947, -0.586503, 0.586503, -0.809947, -28, -33)
-editor_settings/show_bone_gizmo = false
 
 [node name="tail_2" type="Bone2D" parent="Skeleton2D/hip/tail_0/tail_1"]
 position = Vector2(42.8153, -12.4839)
 rotation = -0.932164
+scale = Vector2(1, 1)
 rest = Transform2D(0.596098, -0.802912, 0.802912, 0.596098, 42.8153, -12.4839)
-editor_settings/show_bone_gizmo = false
 
 [node name="tail_3" type="Bone2D" parent="Skeleton2D/hip/tail_0/tail_1/tail_2"]
 position = Vector2(50.3317, -16.635)
 rotation = -0.674604
+scale = Vector2(1, 1)
 rest = Transform2D(0.780954, -0.624588, 0.624588, 0.780954, 50.3317, -16.635)
-editor_settings/show_bone_gizmo = false
 
 [node name="tail_4" type="Bone2D" parent="Skeleton2D/hip/tail_0/tail_1/tail_2/tail_3"]
 position = Vector2(62.9253, -12.0998)
 rest = Transform2D(1, 0, 0, 1, 62.9253, -12.0998)
-editor_settings/show_bone_gizmo = false
 
 [node name="tail_5" type="Bone2D" parent="Skeleton2D/hip/tail_0/tail_1/tail_2/tail_3/tail_4"]
 position = Vector2(50.1599, 2.44636)
 rest = Transform2D(1, 0, 0, 1, 50.1599, 2.44636)
-editor_settings/show_bone_gizmo = false
 
 [node name="tail_6" type="Bone2D" parent="Skeleton2D/hip/tail_0/tail_1/tail_2/tail_3/tail_4/tail_5"]
 position = Vector2(26.8055, 32.1747)
 rotation = 1.67284
+scale = Vector2(0.999999, 0.999999)
 rest = Transform2D(-0.101863, 0.994798, -0.994798, -0.101863, 26.8055, 32.1747)
-editor_settings/show_bone_gizmo = false
 
 [node name="tail_7" type="Bone2D" parent="Skeleton2D/hip/tail_0/tail_1/tail_2/tail_3/tail_4/tail_5/tail_6"]
 position = Vector2(21.0695, 2.46513)
 rotation = 0.645244
+scale = Vector2(1, 1)
 rest = Transform2D(0.798953, 0.601393, -0.601393, 0.798953, 21.0695, 2.46513)
-editor_settings/show_bone_gizmo = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -2233,3 +2387,6 @@ libraries = {
 "mouse_girl": SubResource("AnimationLibrary_fggv5")
 }
 autoplay = "idle"
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationRootNode_6oqn1")

@@ -1071,7 +1071,7 @@ _data = {
 "walking_mummy": SubResource("Animation_d781a")
 }
 
-[node name="MummyModel" type="Node2D"]
+[node name="MummyModel" type="CanvasGroup"]
 script = ExtResource("1_amouf")
 
 [node name="Polygons" type="Node2D" parent="."]

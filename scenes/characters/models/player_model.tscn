@@ -305,7 +305,7 @@ states/walking/position = Vector2(443, 98)
 transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_j2jqu"), "idle", "walking", SubResource("AnimationNodeStateMachineTransition_a3jlh"), "walking", "idle", SubResource("AnimationNodeStateMachineTransition_2vlm7")]
 graph_offset = Vector2(-306, -22)
 
-[node name="PlayerModel" type="Node2D"]
+[node name="PlayerModel" type="CanvasGroup"]
 script = ExtResource("1_vofvy")
 
 [node name="Polygons" type="Node2D" parent="."]
