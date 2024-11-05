@@ -50,15 +50,28 @@ public partial class PlayerController : CharacterBody2D
 			}
 		}
 
-		if (Input.IsActionPressed("walk_left")) {
+		bool walkLeftPressed = Input.IsActionPressed("walk_left");
+		bool walkRightPressed = Input.IsActionPressed("walk_right");
+		if ((walkLeftPressed && walkRightPressed) || (!shouldWalkToTarget && !walkLeftPressed && !walkRightPressed)) {
 			shouldWalkToTarget = false;
 			walkTarget.Visible = false;
-			model.Walking = true;
+			model.Walking = false;
 		}
-		if (Input.IsActionPressed("walk_right")) {
+		else if (walkLeftPressed) {
 			shouldWalkToTarget = false;
 			walkTarget.Visible = false;
 			model.Walking = true;
+			model.Facing = HumanoidAnimator.FacingDirection.LEFT;
+			var moveVecLocal = new Vector2(-WalkSpeed, 0);
+			MoveAndCollide(moveVecLocal.Rotated(activeRoom.Transform.Rotation));
+		}
+		else if (walkRightPressed) {
+			shouldWalkToTarget = false;
+			walkTarget.Visible = false;
+			model.Walking = true;
+			model.Facing = HumanoidAnimator.FacingDirection.RIGHT;
+			var moveVecLocal = new Vector2(WalkSpeed, 0);
+			MoveAndCollide(moveVecLocal.Rotated(activeRoom.Transform.Rotation));
 		}
 
 		if (shouldWalkToTarget) {
