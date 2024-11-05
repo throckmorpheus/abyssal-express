@@ -12,7 +12,9 @@ current_tab = 0
 
 [node name="Controls" parent="TabContainer" index="1" instance=ExtResource("2_5wl2b")]
 layout_mode = 2
-show_all_actions = true
+input_action_names = Array[StringName]([&"interact", &"walk_left", &"walk_right", &"pause"])
+readable_action_names = Array[String](["Interact", "Left", "Right", "Pause"])
+show_all_actions = false
 metadata/_tab_index = 0
 
 [node name="Audio" parent="TabContainer" index="2" instance=ExtResource("3_jlnxs")]

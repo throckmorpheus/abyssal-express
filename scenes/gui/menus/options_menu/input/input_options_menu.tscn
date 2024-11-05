@@ -5,3 +5,6 @@
 
 [node name="Controls" instance=ExtResource("1_aw55t")]
 script = ExtResource("2_y78dy")
+
+[node name="Label" parent="VBoxContainer/InputMappingContainer" index="0"]
+visible = false

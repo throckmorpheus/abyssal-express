@@ -9,6 +9,7 @@
 theme_override_constants/separation = 16
 
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer" index="0"]
+visible = false
 layout_mode = 2
 theme_override_constants/margin_top = 32
 theme_override_constants/margin_bottom = 32
@@ -31,9 +32,11 @@ text = "Mouse Sensitivity :"
 [node name="HSlider" parent="VBoxContainer/MarginContainer/VBoxContainer/MouseSensitivityControl" index="1"]
 min_value = 0.25
 max_value = 2.0
+value = 1.05
 tick_count = 8
 
 [node name="HSeparator" type="HSeparator" parent="VBoxContainer" index="1"]
+visible = false
 layout_mode = 2
 
 [editable path="VBoxContainer/MarginContainer/VBoxContainer/MouseSensitivityControl"]
