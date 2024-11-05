@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://cmvcbjtcuya80"]
+
+[ext_resource type="Script" path="res://src/PlayerController.cs" id="1_sfnpt"]
+[ext_resource type="PackedScene" uid="uid://cjy5pcuenufdo" path="res://scenes/characters/player_model.tscn" id="2_vniqb"]
+[ext_resource type="Texture2D" uid="uid://b06rk6twlqimj" path="res://assets/icon.svg" id="3_k2lmw"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5c066"]
+radius = 34.1667
+height = 371.667
+
+[node name="Player" type="CharacterBody2D"]
+z_index = 1
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_sfnpt")
+WalkSpeed = 10.0
+metadata/_edit_group_ = true
+
+[node name="FootMarker" type="Node2D" parent="."]
+position = Vector2(0, 423)
+
+[node name="PlayerModel" parent="." instance=ExtResource("2_vniqb")]
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_mask = 28
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+scale = Vector2(2.4, 2.4)
+shape = SubResource("CapsuleShape2D_5c066")
+one_way_collision_margin = 0.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.34, 0.34)
+
+[node name="WalkTarget" type="Node2D" parent="."]
+visible = false
+top_level = true
+z_index = 100
+z_as_relative = false
+
+[node name="TargetMarker" type="Sprite2D" parent="WalkTarget"]
+visible = false
+texture = ExtResource("3_k2lmw")

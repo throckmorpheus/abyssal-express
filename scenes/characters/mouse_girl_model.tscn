@@ -1803,7 +1803,7 @@ _data = {
 "face_front": SubResource("Animation_vx6se")
 }
 
-[node name="MouseCharacter" type="Node2D"]
+[node name="MouseGirlModel" type="Node2D"]
 script = ExtResource("1_gvimc")
 
 [node name="Polygons" type="Node2D" parent="."]

@@ -3,20 +3,41 @@ using System;
 
 public partial class HumanoidAnimator : Node2D
 {
-    private AnimationPlayer animationPlayer;
-
     public override void _Ready() {
         base._Ready();
-        animationPlayer = (AnimationPlayer)GetNode("AnimationPlayer");
+        player = GetNode<AnimationPlayer>("AnimationPlayer");
+        tree = GetNode<AnimationTree>("AnimationTree");
     }
 
-    public override void _Process(double delta) {
-        base._Process(delta);
-        if (Input.IsActionJustPressed("ui_right")) {
-            animationPlayer.Play("walking", 0.3);
+    public enum FacingDirection {
+        LEFT, RIGHT
+    }
+    private FacingDirection facing = FacingDirection.RIGHT;
+    public FacingDirection Facing {
+        get => facing;
+        set => SetFacing(value);
+    }
+    
+    void SetFacing(FacingDirection val) {
+        facing = val;
+        if (facing == FacingDirection.LEFT) {
+            Scale = Scale with { X = -1 };
         }
-        if (Input.IsActionJustReleased("ui_right")) {
-            animationPlayer.Play("idle", 0.3);
+        if (facing == FacingDirection.RIGHT) {
+            Scale = Scale with { X = 1 };
+        }
+    }
+
+    private AnimationPlayer player;
+    private AnimationTree tree;
+
+    private bool _walking;
+    public bool Walking {
+        get => _walking;
+        set {
+            _walking = value;
+            tree.Set("parameters/conditions/is_walking", _walking);
+            tree.Set("parameters/conditions/not_walking", !_walking);
         }
     }
 }

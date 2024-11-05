@@ -1,42 +1,16 @@
-[gd_scene load_steps=8 format=3 uid="uid://cc7wg51ux5jq"]
+[gd_scene load_steps=4 format=3 uid="uid://cc7wg51ux5jq"]
 
-[ext_resource type="Script" path="res://src/Main.cs" id="1_lbu3r"]
-[ext_resource type="PackedScene" uid="uid://cmvcbjtcuya80" path="res://src/player.tscn" id="2_ly6mm"]
-[ext_resource type="PackedScene" uid="uid://calnmj0ke305a" path="res://src/character_1.tscn" id="3_gcgba"]
-[ext_resource type="Script" path="res://scenes/Monster.cs" id="4_wy1a7"]
-[ext_resource type="Texture2D" uid="uid://b06rk6twlqimj" path="res://assets/icon.svg" id="5_pqrq8"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2js4w"]
-size = Vector2(126, 126)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_axboy"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("5_pqrq8")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
+[ext_resource type="PackedScene" uid="uid://cekuod8y1eske" path="res://scenes/background.tscn" id="1_ed4cy"]
+[ext_resource type="PackedScene" uid="uid://bsts0einptdfo" path="res://scenes/room.tscn" id="2_lquwg"]
+[ext_resource type="PackedScene" uid="uid://cmvcbjtcuya80" path="res://scenes/player.tscn" id="2_ly6mm"]
 
 [node name="Main" type="Node2D"]
-script = ExtResource("1_lbu3r")
 
-[node name="player" parent="." instance=ExtResource("2_ly6mm")]
-visibility_layer = 2
+[node name="Background" parent="." instance=ExtResource("1_ed4cy")]
+scale = Vector2(3.74934, 3.74934)
 
-[node name="character1" parent="." instance=ExtResource("3_gcgba")]
+[node name="Room" parent="." instance=ExtResource("2_lquwg")]
+scale = Vector2(2.75532, 2.75532)
 
-[node name="monster" type="Area2D" parent="."]
-position = Vector2(800, 400)
-script = ExtResource("4_wy1a7")
-metadata/_edit_group_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="monster"]
-shape = SubResource("RectangleShape2D_2js4w")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="monster"]
-sprite_frames = SubResource("SpriteFrames_axboy")
-
-[connection signal="area_entered" from="player" to="." method="_on_player_area_entered"]
+[node name="Player" parent="." instance=ExtResource("2_ly6mm")]
+position = Vector2(-291, 130)

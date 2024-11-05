@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cekuod8y1eske"]
+
+[ext_resource type="Texture2D" uid="uid://b2gdbdx46i4ui" path="res://assets/Backgrounds/Outside_BKG.png" id="1_lq7lp"]
+
+[node name="Background" type="Node2D"]
+
+[node name="OutsideBkg" type="Sprite2D" parent="."]
+texture_repeat = 2
+texture = ExtResource("1_lq7lp")
