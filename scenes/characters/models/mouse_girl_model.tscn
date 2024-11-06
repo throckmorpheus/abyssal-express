@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://clyrwshvf5qt6"]
+[gd_scene load_steps=20 format=3 uid="uid://clyrwshvf5qt6"]
 
 [ext_resource type="Script" path="res://src/HumanoidAnimator.cs" id="1_gvimc"]
 [ext_resource type="Texture2D" uid="uid://dphfwktu25xfi" path="res://assets/textures/characters/mouse girl/Child Back Seperated.png" id="2_0wtf8"]
@@ -1959,7 +1959,16 @@ _data = {
 "face_front": SubResource("Animation_vx6se")
 }
 
-[sub_resource type="AnimationRootNode" id="AnimationRootNode_6oqn1"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_q68lj"]
+animation = &"idle"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_bk1li"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_blcie"]
+states/idle/node = SubResource("AnimationNodeAnimation_q68lj")
+states/idle/position = Vector2(291, 96)
+transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_bk1li")]
 
 [node name="MouseGirlModel" type="CanvasGroup"]
 script = ExtResource("1_gvimc")
@@ -2385,4 +2394,5 @@ libraries = {
 autoplay = "idle"
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
-tree_root = SubResource("AnimationRootNode_6oqn1")
+tree_root = SubResource("AnimationNodeStateMachine_blcie")
+anim_player = NodePath("../AnimationPlayer")

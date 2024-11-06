@@ -7,7 +7,6 @@
 [node name="Main" type="Node2D"]
 
 [node name="Background" parent="." instance=ExtResource("1_ed4cy")]
-scale = Vector2(3.74934, 3.74934)
 
 [node name="SleeperCar" parent="." instance=ExtResource("2_q7fs5")]
 
