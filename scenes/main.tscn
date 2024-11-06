@@ -1,14 +1,27 @@
-[gd_scene load_steps=4 format=3 uid="uid://cc7wg51ux5jq"]
+[gd_scene load_steps=5 format=3 uid="uid://cc7wg51ux5jq"]
 
 [ext_resource type="PackedScene" uid="uid://cekuod8y1eske" path="res://scenes/background.tscn" id="1_ed4cy"]
 [ext_resource type="PackedScene" uid="uid://cmvcbjtcuya80" path="res://scenes/characters/player.tscn" id="2_ly6mm"]
 [ext_resource type="PackedScene" uid="uid://7c6ufr5u3tec" path="res://scenes/rooms/sleeper_car.tscn" id="2_q7fs5"]
 
+[sub_resource type="Environment" id="Environment_p7tw4"]
+background_mode = 3
+ambient_light_energy = 0.0
+
 [node name="Main" type="Node2D"]
 
-[node name="Background" parent="." instance=ExtResource("1_ed4cy")]
+[node name="Background" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Background" parent="Background" instance=ExtResource("1_ed4cy")]
 
 [node name="SleeperCar" parent="." instance=ExtResource("2_q7fs5")]
 
 [node name="Player" parent="." instance=ExtResource("2_ly6mm")]
 position = Vector2(-367, 75)
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.519925, 0.252249, 0.379629, 1)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_p7tw4")

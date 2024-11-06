@@ -1,8 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://7c6ufr5u3tec"]
+[gd_scene load_steps=6 format=3 uid="uid://7c6ufr5u3tec"]
 
 [ext_resource type="PackedScene" uid="uid://bsts0einptdfo" path="res://scenes/rooms/room.tscn" id="1_4ma0p"]
 [ext_resource type="Texture2D" uid="uid://b75q7p6v4itos" path="res://assets/textures/backgrounds/Carriage_1_BKG.png" id="2_foknf"]
 [ext_resource type="PackedScene" uid="uid://nwgf0guju731" path="res://scenes/characters/mouse_girl.tscn" id="2_vl1dj"]
+
+[sub_resource type="Gradient" id="Gradient_62tre"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_5ydw8"]
+gradient = SubResource("Gradient_62tre")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.952991, 0.311966)
 
 [node name="SleeperCar" type="Node2D"]
 
@@ -14,3 +23,8 @@ texture = ExtResource("2_foknf")
 
 [node name="MouseGirl" parent="." instance=ExtResource("2_vl1dj")]
 position = Vector2(834, 170)
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(821, -263)
+scale = Vector2(-40.6257, -40.6257)
+texture = SubResource("GradientTexture2D_5ydw8")

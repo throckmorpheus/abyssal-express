@@ -1,4 +1,5 @@
 shader_type canvas_item;
+render_mode unshaded;
 
 uniform vec3 line_colour: source_color = vec3(1.0);
 uniform int line_thickness: hint_range(0, 10) = 1;
@@ -12,7 +13,7 @@ void fragment() {
 			line_alpha += texture(screen_texture, SCREEN_UV + vec2(i, j)).a;
 		}
 	}
-	vec4 colour = texture(screen_texture, SCREEN_UV);
+	vec4 colour = textureLod(screen_texture, SCREEN_UV, 0.0);
 	vec4 outline = vec4(line_colour, min(line_alpha, 1.0));
 	COLOR *= mix(outline, colour, colour.a);
 }

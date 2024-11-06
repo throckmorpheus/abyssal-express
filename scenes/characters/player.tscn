@@ -31,6 +31,7 @@ shape = SubResource("RectangleShape2D_l5efw")
 one_way_collision_margin = 0.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
+scale = Vector2(0.170569, -0.602934)
 zoom = Vector2(0.34, 0.34)
 
 [node name="WalkTarget" type="Node2D" parent="."]

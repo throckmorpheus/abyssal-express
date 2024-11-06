@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cekuod8y1eske"]
+[gd_scene load_steps=19 format=3 uid="uid://cekuod8y1eske"]
 
 [ext_resource type="Shader" path="res://src/shaders/stars.gdshader" id="1_f8nxq"]
 [ext_resource type="Shader" path="res://src/shaders/clouds.gdshader" id="1_ks8m0"]
@@ -38,6 +38,11 @@ shader_parameter/blur2 = 0.00918
 shader_parameter/noise_texture = SubResource("NoiseTexture2D_cgunb")
 shader_parameter/gradient = SubResource("GradientTexture2D_rkmpd")
 
+[sub_resource type="Gradient" id="Gradient_n2nxq"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_em8se"]
+gradient = SubResource("Gradient_n2nxq")
+
 [sub_resource type="Gradient" id="Gradient_5j8s8"]
 colors = PackedColorArray(0.956863, 0.156863, 0.956863, 0, 0.88422, 0.259149, 0.394808, 1)
 
@@ -68,9 +73,14 @@ shader_parameter/blur2 = 0.01
 shader_parameter/noise_texture = SubResource("NoiseTexture2D_4qhmp")
 shader_parameter/gradient = SubResource("GradientTexture2D_d07yc")
 
+[sub_resource type="Gradient" id="Gradient_1vvid"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_6lbot"]
+gradient = SubResource("Gradient_1vvid")
+
 [node name="Background" type="Node2D"]
 
-[node name="Starfield2" type="Sprite2D" parent="."]
+[node name="Starfield" type="Sprite2D" parent="."]
 texture_repeat = 2
 material = SubResource("ShaderMaterial_0iw3d")
 scale = Vector2(219.601, -280.214)
@@ -79,11 +89,11 @@ texture = ExtResource("1_lq7lp")
 [node name="Back Nebula" type="Sprite2D" parent="."]
 texture_repeat = 2
 material = SubResource("ShaderMaterial_f0pq5")
-scale = Vector2(219.601, -280.214)
-texture = ExtResource("1_lq7lp")
+scale = Vector2(500, 500)
+texture = SubResource("GradientTexture2D_em8se")
 
 [node name="Front Nebula" type="Sprite2D" parent="."]
 texture_repeat = 2
 material = SubResource("ShaderMaterial_ro3sp")
-scale = Vector2(219.601, -280.214)
-texture = ExtResource("1_lq7lp")
+scale = Vector2(500, 500)
+texture = SubResource("GradientTexture2D_6lbot")
