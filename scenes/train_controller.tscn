@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://dhxdw5525wuvt"]
+
+[ext_resource type="Script" path="res://src/level/TrainController.cs" id="1_ldt35"]
+[ext_resource type="PackedScene" uid="uid://7c6ufr5u3tec" path="res://scenes/rooms/sleeper_car.tscn" id="2_hg5if"]
+[ext_resource type="PackedScene" uid="uid://bmxu1dbpcbn6u" path="res://scenes/rooms/gangway.tscn" id="3_nn7dd"]
+
+[node name="TrainController" type="Node2D"]
+script = ExtResource("1_ldt35")
+TrainCarScenes = Array[PackedScene]([ExtResource("2_hg5if"), ExtResource("2_hg5if")])
+GangwayScene = ExtResource("3_nn7dd")

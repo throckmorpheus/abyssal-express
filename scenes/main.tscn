@@ -1,8 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://cc7wg51ux5jq"]
+[gd_scene load_steps=9 format=3 uid="uid://cc7wg51ux5jq"]
 
 [ext_resource type="PackedScene" uid="uid://cekuod8y1eske" path="res://scenes/background.tscn" id="1_ed4cy"]
+[ext_resource type="PackedScene" uid="uid://dhxdw5525wuvt" path="res://scenes/train_controller.tscn" id="2_kuo5l"]
 [ext_resource type="PackedScene" uid="uid://cmvcbjtcuya80" path="res://scenes/characters/player.tscn" id="2_ly6mm"]
-[ext_resource type="PackedScene" uid="uid://7c6ufr5u3tec" path="res://scenes/rooms/sleeper_car.tscn" id="2_q7fs5"]
+[ext_resource type="PackedScene" uid="uid://ce7e8u1rvcjjp" path="res://scenes/characters/mummy.tscn" id="4_joqrb"]
+[ext_resource type="AudioStream" uid="uid://baucmrnk288hs" path="res://assets/audio/music/horror_01_drone_11.wav" id="5_culor"]
+[ext_resource type="PackedScene" uid="uid://dcbuucqifkh4t" path="res://scenes/gui/dialogue.tscn" id="7_ob38g"]
+[ext_resource type="Texture2D" uid="uid://u226rje74cmm" path="res://assets/textures/characters/mother/portraits/default.png" id="8_yrta2"]
 
 [sub_resource type="Environment" id="Environment_p7tw4"]
 background_mode = 3
@@ -15,13 +19,33 @@ layer = -1
 
 [node name="Background" parent="Background" instance=ExtResource("1_ed4cy")]
 
-[node name="SleeperCar" parent="." instance=ExtResource("2_q7fs5")]
+[node name="TrainController" parent="." instance=ExtResource("2_kuo5l")]
+
+[node name="Mummy" parent="." instance=ExtResource("4_joqrb")]
+visible = false
+position = Vector2(-1072, 19)
+scale = Vector2(1.10832, 1.10832)
 
 [node name="Player" parent="." instance=ExtResource("2_ly6mm")]
-position = Vector2(-367, 75)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color(0.519925, 0.252249, 0.379629, 1)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_p7tw4")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_culor")
+autoplay = true
+bus = &"Music"
+
+[node name="GUI" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Dialogue" parent="GUI" instance=ExtResource("7_ob38g")]
+offset_left = 236.0
+offset_top = 484.0
+offset_right = -678.688
+offset_bottom = 209.896
+StartNode = "test"
+CharacterPortrait = ExtResource("8_yrta2")

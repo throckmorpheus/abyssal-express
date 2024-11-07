@@ -63,7 +63,7 @@ public partial class PlayerController : CharacterBody2D
 			model.Walking = true;
 			model.Facing = HumanoidAnimator.FacingDirection.LEFT;
 			var moveVecLocal = new Vector2(-WalkSpeed, 0);
-			MoveAndCollide(moveVecLocal.Rotated(activeRoom.Transform.Rotation));
+			MoveAndCollide(moveVecLocal.Rotated(activeRoom.GlobalRotation));
 		}
 		else if (walkRightPressed) {
 			shouldWalkToTarget = false;
@@ -71,7 +71,7 @@ public partial class PlayerController : CharacterBody2D
 			model.Walking = true;
 			model.Facing = HumanoidAnimator.FacingDirection.RIGHT;
 			var moveVecLocal = new Vector2(WalkSpeed, 0);
-			MoveAndCollide(moveVecLocal.Rotated(activeRoom.Transform.Rotation));
+			MoveAndCollide(moveVecLocal.Rotated(activeRoom.GlobalRotation));
 		}
 
 		if (shouldWalkToTarget) {

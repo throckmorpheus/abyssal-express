@@ -1,0 +1,68 @@
+[gd_scene load_steps=5 format=3 uid="uid://bmxu1dbpcbn6u"]
+
+[ext_resource type="Script" path="res://src/level/Gangway.cs" id="1_g8ygl"]
+[ext_resource type="PackedScene" uid="uid://bsts0einptdfo" path="res://scenes/rooms/room.tscn" id="1_s0wc2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k7xsg"]
+size = Vector2(330, 510)
+
+[sub_resource type="Curve2D" id="Curve2D_ks3su"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -160, 0, 0, 0, 0, 0, 160, 0)
+}
+point_count = 2
+
+[node name="Gangway" type="Node2D"]
+script = ExtResource("1_g8ygl")
+
+[node name="Room" parent="." node_paths=PackedStringArray("TopLeft", "TopRight", "BottomLeft", "BottomRight") instance=ExtResource("1_s0wc2")]
+scale = Vector2(2.473, 2.473)
+RoomPriority = 0
+TopLeft = NodePath("../Skeleton2D/Top Left")
+TopRight = NodePath("../Skeleton2D/Top Right")
+BottomLeft = NodePath("../Skeleton2D/Bottom Left")
+BottomRight = NodePath("../Skeleton2D/Bottom Right")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Room"]
+shape = SubResource("RectangleShape2D_k7xsg")
+
+[node name="Floor" type="Path2D" parent="Room"]
+position = Vector2(0, 210)
+curve = SubResource("Curve2D_ks3su")
+
+[node name="Background" type="Polygon2D" parent="."]
+color = Color(0.187059, 0.199925, 0.212214, 1)
+skeleton = NodePath("../Skeleton2D")
+polygon = PackedVector2Array(-410, 600, 410, 600, 410, -570, -410, -570)
+uv = PackedVector2Array(-410, 600, 410, 600, 410, -570, -410, -570)
+bones = ["Top Left", PackedFloat32Array(0, 0, 0, 0.5), "Top Right", PackedFloat32Array(0, 0, 0.5, 0), "Bottom Left", PackedFloat32Array(0.5, 0, 0, 0), "Bottom Right", PackedFloat32Array(0, 0.5, 0, 0)]
+
+[node name="Skeleton2D" type="Skeleton2D" parent="."]
+
+[node name="Top Left" type="Bone2D" parent="Skeleton2D"]
+position = Vector2(-410, -570)
+rest = Transform2D(1, 0, 0, 1, -410, -570)
+auto_calculate_length_and_angle = false
+length = 56.0
+bone_angle = -90.0
+
+[node name="Top Right" type="Bone2D" parent="Skeleton2D"]
+position = Vector2(410, -570)
+rest = Transform2D(1, 0, 0, 1, 410, -570)
+auto_calculate_length_and_angle = false
+length = 56.0
+bone_angle = -90.0
+
+[node name="Bottom Left" type="Bone2D" parent="Skeleton2D"]
+position = Vector2(-410, 600)
+rest = Transform2D(1, 0, 0, 1, -410, 600)
+auto_calculate_length_and_angle = false
+length = 56.0
+bone_angle = 90.0
+
+[node name="Bottom Right" type="Bone2D" parent="Skeleton2D"]
+position = Vector2(410, 600)
+rest = Transform2D(1, 0, 0, 1, 410, 600)
+auto_calculate_length_and_angle = false
+length = 56.0
+bone_angle = 90.0

@@ -1,24 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bsts0einptdfo"]
+[gd_scene load_steps=2 format=3 uid="uid://bsts0einptdfo"]
 
-[ext_resource type="Script" path="res://src/Room.cs" id="1_dnlfj"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ip55o"]
-size = Vector2(1200, 510)
-
-[sub_resource type="Curve2D" id="Curve2D_ab1xw"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, -578, 210, 0, 0, 0, 0, 573, 210)
-}
-point_count = 2
+[ext_resource type="Script" path="res://src/level/Room.cs" id="1_2h0on"]
 
 [node name="Room" type="Area2D"]
 collision_layer = 4
 collision_mask = 0
 monitoring = false
-script = ExtResource("1_dnlfj")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_ip55o")
-
-[node name="Floor" type="Path2D" parent="."]
-curve = SubResource("Curve2D_ab1xw")
+script = ExtResource("1_2h0on")

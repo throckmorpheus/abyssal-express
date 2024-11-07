@@ -12,6 +12,11 @@ License: Freeware by Johan Holmdahl 1999.
 Author: [JDSherbert](https://jdsherbert.itch.io/)
 Source: [itch.io: Ultimate UI SFX Pack](https://jdsherbert.itch.io/ultimate-ui-sfx-pack)
 
+#### Horror SFX Volume 1
+Author: [ObsydianX](https://obsydianx.itch.io/)
+Source: [itch.io: Horror SFX Volume 1](https://obsydianx.itch.io/horror-sfx-volume-1)
+License: [CC 4.0](https://creativecommons.org/licenses/by/4.0/)
+
 #### Canvas Group Outline Shader
 Author: liggiorgio
 Source: [Godot Shaders: Canvas Group Outline](https://godotshaders.com/shader/canvas-group-outline/)
