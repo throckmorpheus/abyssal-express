@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://c318rpoyvx1o7"]
+
+[ext_resource type="PackedScene" uid="uid://dcbuucqifkh4t" path="res://scenes/gui/dialogue.tscn" id="1_u1aak"]
+
+[node name="InterfaceViewport" type="CanvasLayer"]
+
+[node name="Dialogue" parent="." instance=ExtResource("1_u1aak")]
+offset_left = 275.0
+offset_top = 401.0
+offset_right = -639.688
+offset_bottom = 126.896
+scale = Vector2(0.569146, 0.569146)
+metadata/_edit_use_anchors_ = true

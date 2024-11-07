@@ -16,17 +16,29 @@ public partial class Interactable : Node2D
 		clickArea.MouseExited += OnMouseExited;
 	}
 
+	public override void _Process(double delta) {
+		if (mousedOver && Input.IsActionJustPressed("click")) {
+			OnInteract();
+		}
+	}
+
 	void OnMouseEntered() {
+		mousedOver = true;
 		model.Material = outlineMaterial;
 	}
 
 	void OnMouseExited() {
+		mousedOver = false;
 		model.Material = null;
 	}
+
+	public virtual void OnInteract() {}
 	
 	private Area2D clickArea;
 	private Area2D interactArea;
 
 	private CanvasGroup model;
 	private Material outlineMaterial;
+
+	private bool mousedOver = false;
 }

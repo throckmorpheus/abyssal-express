@@ -27,6 +27,7 @@ SceneLoader="*res://addons/maaacks_menus_template/base/scenes/autoloads/scene_lo
 ProjectMusicController="*res://addons/maaacks_menus_template/base/scenes/autoloads/project_music_controller.tscn"
 ProjectUISoundController="*res://addons/maaacks_menus_template/base/scenes/autoloads/project_ui_sound_controller.tscn"
 ResourceLoadErrorFix="*res://src/singleton/ResourceLoadErrorFix.cs"
+GuiSingleton="*res://src/singleton/GUISingleton.cs"
 
 [dotnet]
 

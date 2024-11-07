@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://nwgf0guju731"]
+[gd_scene load_steps=6 format=3 uid="uid://nwgf0guju731"]
 
 [ext_resource type="PackedScene" uid="uid://clyrwshvf5qt6" path="res://scenes/characters/models/mouse_girl_model.tscn" id="1_ktsd6"]
-[ext_resource type="Script" path="res://src/Interactable.cs" id="1_xrtlr"]
+[ext_resource type="Script" path="res://src/InteractableCharacter.cs" id="1_lpato"]
+[ext_resource type="Texture2D" uid="uid://b14w71lcknkcj" path="res://assets/textures/characters/mouse girl/portraits/default.png" id="2_dtcpl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nty2g"]
 size = Vector2(303, 750)
@@ -10,7 +11,9 @@ size = Vector2(303, 750)
 size = Vector2(680, 782)
 
 [node name="MouseGirl" type="Node2D"]
-script = ExtResource("1_xrtlr")
+script = ExtResource("1_lpato")
+Portrait = ExtResource("2_dtcpl")
+DialogueEntryPoint = "temp_build_message"
 
 [node name="Model" parent="." instance=ExtResource("1_ktsd6")]
 

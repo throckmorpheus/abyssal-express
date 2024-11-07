@@ -41,6 +41,11 @@ public partial class PlayerController : CharacterBody2D
 			}
 		}
 		
+		bool inDialogue = GUISingleton.Instance != null && GUISingleton.Instance.DialogueController.DialogueRunner.IsDialogueRunning;
+		if (inDialogue) {
+			return;
+		}
+		
 		if (Input.IsActionJustPressed("click")) {
 			var targetRoom = trainController.MousedOverRoom();
 			if (targetRoom == null) { targetRoom = activeRoom; }

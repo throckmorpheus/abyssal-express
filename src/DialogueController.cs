@@ -11,11 +11,11 @@ public partial class DialogueController : Control
 		portraitRect.Texture = CharacterPortrait;
 		portraitRect.Visible = true;
 
-		dialogueRunner = GetNode<DialogueRunner>("DialogueRunner");
-		dialogueRunner.Connect("onNodeStart", new Callable(this, MethodName.OnDialogueStart));
-		dialogueRunner.Connect("onDialogueComplete", new Callable(this, MethodName.OnDialogueComplete));
+		DialogueRunner = GetNode<DialogueRunner>("DialogueRunner");
+		DialogueRunner.Connect("onNodeStart", new Callable(this, MethodName.OnDialogueStart));
+		DialogueRunner.Connect("onDialogueComplete", new Callable(this, MethodName.OnDialogueComplete));
 
-		dialogueRunner.StartDialogue(StartNode);
+		//dialogueRunner.StartDialogue(StartNode);
 	}
 
 	public void OnDialogueStart() {
@@ -25,8 +25,6 @@ public partial class DialogueController : Control
 	public void OnDialogueComplete() {
 		portraitRect.Visible = false;
 	}
-
-	[Export] public String StartNode;
 
 	private Texture2D _characterPortrait;
 	[Export] public Texture2D CharacterPortrait
@@ -39,5 +37,5 @@ public partial class DialogueController : Control
 	}
 
 	private TextureRect portraitRect;
-	private DialogueRunner dialogueRunner;
+	public DialogueRunner DialogueRunner { get; private set; }
 }

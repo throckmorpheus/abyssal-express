@@ -1,9 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://7c6ufr5u3tec"]
+[gd_scene load_steps=9 format=3 uid="uid://c8orq3jcgtjyi"]
 
-[ext_resource type="PackedScene" uid="uid://bsts0einptdfo" path="res://scenes/rooms/room.tscn" id="1_4ma0p"]
-[ext_resource type="Script" path="res://src/level/TrainCar.cs" id="1_m8weh"]
-[ext_resource type="Texture2D" uid="uid://b75q7p6v4itos" path="res://assets/textures/backgrounds/Carriage_1_BKG.png" id="2_foknf"]
-[ext_resource type="PackedScene" uid="uid://nwgf0guju731" path="res://scenes/characters/mouse_girl.tscn" id="2_vl1dj"]
+[ext_resource type="Script" path="res://src/level/TrainCar.cs" id="1_el73o"]
+[ext_resource type="PackedScene" uid="uid://bsts0einptdfo" path="res://scenes/rooms/room.tscn" id="2_ot6ik"]
+[ext_resource type="Texture2D" uid="uid://b75q7p6v4itos" path="res://assets/textures/backgrounds/Carriage_1_BKG.png" id="3_2b8tr"]
+[ext_resource type="PackedScene" uid="uid://ce7e8u1rvcjjp" path="res://scenes/characters/mummy.tscn" id="4_emqq3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p5j2i"]
 size = Vector2(3004, 1210)
@@ -24,9 +24,9 @@ fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(0.952991, 0.311966)
 
 [node name="SleeperCar" type="Node2D"]
-script = ExtResource("1_m8weh")
+script = ExtResource("1_el73o")
 
-[node name="Room" parent="." node_paths=PackedStringArray("TopLeft", "TopRight", "BottomLeft", "BottomRight") instance=ExtResource("1_4ma0p")]
+[node name="Room" parent="." node_paths=PackedStringArray("TopLeft", "TopRight", "BottomLeft", "BottomRight") instance=ExtResource("2_ot6ik")]
 TopLeft = NodePath("RoomTopLeftMarker")
 TopRight = NodePath("RoomTopRightMarker")
 BottomLeft = NodePath("RoomBottomLeftMarker")
@@ -57,15 +57,14 @@ gizmo_extents = 29.4
 
 [node name="Carriage1Bkg" type="Sprite2D" parent="."]
 scale = Vector2(2.47293, 2.47293)
-texture = ExtResource("2_foknf")
-
-[node name="MouseGirl" parent="." instance=ExtResource("2_vl1dj")]
-position = Vector2(834, 170)
+texture = ExtResource("3_2b8tr")
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
-position = Vector2(821, -263)
+position = Vector2(42, -452)
 rotation = -3.14159
-scale = Vector2(40.6257, 40.6257)
+scale = Vector2(33.3186, 33.3186)
+energy = 0.5
 texture = SubResource("GradientTexture2D_5ydw8")
 
-[editable path="MouseGirl"]
+[node name="Mummy" parent="." instance=ExtResource("4_emqq3")]
+position = Vector2(-1262, 45)
