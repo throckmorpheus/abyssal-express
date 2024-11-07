@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://b06rk6twlqimj" path="res://assets/icon.svg" id="3_k2lmw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l5efw"]
-size = Vector2(87.0833, 380)
+size = Vector2(76.6667, 367.917)
 
 [node name="Player" type="CharacterBody2D"]
 z_index = 1
@@ -25,7 +25,7 @@ collision_mask = 28
 monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
-position = Vector2(-7.5, 0)
+position = Vector2(0, 14.5)
 scale = Vector2(2.4, 2.4)
 shape = SubResource("RectangleShape2D_l5efw")
 one_way_collision_margin = 0.0
@@ -36,7 +36,6 @@ zoom = Vector2(0.34, 0.34)
 
 [node name="WalkTarget" type="Node2D" parent="."]
 visible = false
-top_level = true
 z_index = 100
 z_as_relative = false
 

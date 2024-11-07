@@ -6,11 +6,11 @@
 [ext_resource type="PackedScene" uid="uid://nwgf0guju731" path="res://scenes/characters/mouse_girl.tscn" id="2_vl1dj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p5j2i"]
-size = Vector2(1200, 510)
+size = Vector2(3004, 1210)
 
 [sub_resource type="Curve2D" id="Curve2D_fxoit"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, -578, 0, 0, 0, 0, 0, 573, 0)
+"points": PackedVector2Array(0, 0, 0, 0, -1450, 0, 0, 0, 0, 0, 1450, 0)
 }
 point_count = 2
 
@@ -27,7 +27,6 @@ fill_to = Vector2(0.952991, 0.311966)
 script = ExtResource("1_m8weh")
 
 [node name="Room" parent="." node_paths=PackedStringArray("TopLeft", "TopRight", "BottomLeft", "BottomRight") instance=ExtResource("1_4ma0p")]
-scale = Vector2(2.47293, 2.47293)
 TopLeft = NodePath("RoomTopLeftMarker")
 TopRight = NodePath("RoomTopRightMarker")
 BottomLeft = NodePath("RoomBottomLeftMarker")
@@ -37,23 +36,23 @@ BottomRight = NodePath("RoomBottomRightMarker")
 shape = SubResource("RectangleShape2D_p5j2i")
 
 [node name="Floor" type="Path2D" parent="Room"]
-position = Vector2(0, 210)
+position = Vector2(0, 540)
 curve = SubResource("Curve2D_fxoit")
 
 [node name="RoomTopLeftMarker" type="Marker2D" parent="Room"]
-position = Vector2(-588.491, -229.687)
+position = Vector2(-1450, -590)
 gizmo_extents = 29.4
 
 [node name="RoomTopRightMarker" type="Marker2D" parent="Room"]
-position = Vector2(589.584, -229.687)
+position = Vector2(1450, -590)
 gizmo_extents = 29.4
 
 [node name="RoomBottomLeftMarker" type="Marker2D" parent="Room"]
-position = Vector2(-588.491, 230.091)
+position = Vector2(-1450, 590)
 gizmo_extents = 29.4
 
 [node name="RoomBottomRightMarker" type="Marker2D" parent="Room"]
-position = Vector2(589.584, 230.091)
+position = Vector2(1450, 590)
 gizmo_extents = 29.4
 
 [node name="Carriage1Bkg" type="Sprite2D" parent="."]

@@ -26,7 +26,9 @@ visible = false
 position = Vector2(-1072, 19)
 scale = Vector2(1.10832, 1.10832)
 
-[node name="Player" parent="." instance=ExtResource("2_ly6mm")]
+[node name="Player" parent="." node_paths=PackedStringArray("trainController") instance=ExtResource("2_ly6mm")]
+WalkSpeed = 600.0
+trainController = NodePath("../TrainController")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color(0.519925, 0.252249, 0.379629, 1)
