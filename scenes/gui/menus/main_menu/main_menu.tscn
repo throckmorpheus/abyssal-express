@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://lyxpf6uvfvhy"]
+[gd_scene load_steps=9 format=3 uid="uid://lyxpf6uvfvhy"]
 
 [ext_resource type="PackedScene" uid="uid://c6k5nnpbypshi" path="res://addons/maaacks_menus_template/base/scenes/menus/main_menu/main_menu.tscn" id="1_3q2ev"]
 [ext_resource type="Script" path="res://scenes/gui/menus/main_menu/main_menu.gd" id="2_lfebh"]
 [ext_resource type="PackedScene" uid="uid://cxkmqi13ilvx0" path="res://scenes/gui/menus/options_menu/master_options_menu_with_tabs.tscn" id="3_8st7n"]
 [ext_resource type="PackedScene" uid="uid://bivhdbpv0337y" path="res://scenes/gui/credits/credits.tscn" id="4_h132w"]
 [ext_resource type="Texture2D" uid="uid://uplsypxrud4g" path="res://assets/textures/ui/Logov2_Transparent.png" id="5_eoc5e"]
+[ext_resource type="PackedScene" uid="uid://cekuod8y1eske" path="res://scenes/background.tscn" id="5_pkiax"]
 [ext_resource type="AudioStream" uid="uid://x610serhy7f2" path="res://assets/audio/JDSherbert - Ultimate UI SFX Pack - Cursor - 3.wav" id="5_xesnf"]
 [ext_resource type="AudioStream" uid="uid://b22kclbwlhfe7" path="res://assets/audio/JDSherbert - Ultimate UI SFX Pack - Select - 1.wav" id="6_xqaqp"]
 
@@ -14,12 +15,17 @@ game_scene_path = "res://scenes/main.tscn"
 options_packed_scene = ExtResource("3_8st7n")
 credits_packed_scene = ExtResource("4_h132w")
 
-[node name="UISoundController" parent="." index="0"]
+[node name="Background" parent="." index="0" instance=ExtResource("5_pkiax")]
+
+[node name="UISoundController" parent="." index="1"]
 button_hovered = ExtResource("5_xesnf")
 button_pressed = ExtResource("6_xqaqp")
 
-[node name="BackgroundMusicPlayer" parent="." index="1"]
+[node name="BackgroundMusicPlayer" parent="." index="2"]
 bus = &"Master"
+
+[node name="BackgroundTextureRect" parent="." index="3"]
+visible = false
 
 [node name="TitleLabel" parent="MenuContainer/TitleMargin/TitleContainer" index="0"]
 visible = false
@@ -36,14 +42,19 @@ offset_bottom = -173.136
 
 [node name="MarginContainer" type="MarginContainer" parent="MenuContainer/TitleMargin/TitleContainer" index="2"]
 layout_mode = 2
-anchor_right = 1.0
-anchor_bottom = 0.36
-offset_left = 365.0
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.404
+offset_left = -211.0
 offset_top = -26.0
-offset_right = -392.0
-offset_bottom = 27.24
+offset_right = 184.0
+offset_bottom = 0.136002
 
-[node name="TextureRect" type="TextureRect" parent="MenuContainer/TitleMargin/TitleContainer/MarginContainer" index="0"]
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="MenuContainer/TitleMargin/TitleContainer/MarginContainer" index="0"]
+layout_mode = 2
+ratio = 1.4368
+
+[node name="TextureRect" type="TextureRect" parent="MenuContainer/TitleMargin/TitleContainer/MarginContainer/AspectRatioContainer" index="0"]
 layout_mode = 2
 texture = ExtResource("5_eoc5e")
 expand_mode = 2

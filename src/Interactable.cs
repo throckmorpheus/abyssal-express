@@ -23,11 +23,13 @@ public partial class Interactable : Node2D
 	}
 
 	void OnMouseEntered() {
+		GD.Print("Mouse over");
 		mousedOver = true;
 		model.Material = outlineMaterial;
 	}
 
 	void OnMouseExited() {
+		GD.Print("Mouse exit");
 		mousedOver = false;
 		model.Material = null;
 	}

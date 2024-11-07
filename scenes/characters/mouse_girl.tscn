@@ -20,6 +20,7 @@ DialogueEntryPoint = "temp_build_message"
 [node name="ClickArea" type="Area2D" parent="."]
 collision_layer = 2
 collision_mask = 0
+priority = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickArea"]
 position = Vector2(3.5, -14)
